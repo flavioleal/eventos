@@ -1,0 +1,81 @@
+#home-info{
+	font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#home-info .home-info-number{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-color: #FFBD5E;
+    color: #fff;
+    border-radius: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+
+#home-info .home-info-text{
+	display:inline-block;
+	text-indent: 20px;
+}
+
+#home-charts{
+	margin-top:20px;
+}
+
+#home-charts canvas{
+	position: relative;
+    left:40px;
+}
+
+
+.grafico-legenda{
+	position: absolute;
+	top:40px;
+}
+.grafico-legenda-todas{
+    position: absolute;
+    color:#A29E9E;
+    top: 175px;
+    left: 35px;
+}
+.grafico-legenda-todas:hover,.grafico-legenda-todas:active,.grafico-legenda-todas:visited{
+    color:#666;
+    text-decoration: none;
+}
+
+ul.doughnut-legend {
+    width: 105px;
+    height: 135px;
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 4px;
+    overflow: scroll;
+}
+.doughnut-legend li{
+	list-style: none;
+	font-size:12px;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.doughnut-legend li span {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    /*background-color: inherit !important;*/
+    border: 10px solid #fff;
+}
+
+h1 .home-icone{
+	font-size:30px;
+}
+
+
+@media (max-width: 768px) {
+	#home-info{
+		font-size: 12px;
+	}
+}

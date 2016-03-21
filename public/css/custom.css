@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Swiss 721 Thin';
+    src: url('../fonts/swiss-721-thin/swiss-721-thin.eot');
+    src: local('☺'), url('../fonts/swiss-721-thin/swiss-721-thin.woff') format('woff'), url('../fonts/swiss-721-thin/swiss-721-thin.ttf') format('truetype'), url('../fonts/swiss-721-thin/swiss-721-thin.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-ExtraLight';
+    src: url('../fonts/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.eot');
+    src: local('☺'), url('../fonts/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.woff') format('woff'), url('../fonts/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.ttf') format('truetype'), url('../fonts/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.svg') format('svg');
+}
+@font-face {
+    font-family: 'SourceSansPro-Light';
+    src: url('../fonts/SourceSansPro-Light/SourceSansPro-Light.eot');
+    src: local('☺'), url('../fonts/SourceSansPro-Light/SourceSansPro-Light.woff') format('woff'), url('../fonts/SourceSansPro-Light/SourceSansPro-Light.ttf') format('truetype'), url('../fonts/SourceSansPro-Light/SourceSansPro-Light.svg') format('svg');
+}
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('../fonts/SourceSansPro-Regular/SourceSansPro-Regular.eot');
+    src: local('☺'), url('../fonts/SourceSansPro-Regular/SourceSansPro-Regular.woff') format('woff'), url('../fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf') format('truetype'), url('../fonts/SourceSansPro-Regular/SourceSansPro-Regular.svg') format('svg');
+}
+
+.font-sanspro-light{
+    font-family:'SourceSansPro-Light';
+}
+.font-sanspro-regular{
+    font-family:'SourceSansPro-Regular';
+}
+
+.eventos-content{
+    padding-top: 70px;
+}
+.compumake-logo{
+    background-image: url('/img/compumake-logo.png');
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left 15px;
+    width: 200px;
+    height: 110px;
+
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+
+}
+
+#messages {
+    position: fixed;
+    z-index: 9999999;
+    right: 0px;
+    visibility: hidden;
+}
+
+#messages ul {
+    list-style: none;
+    margin-left: 0px;
+}
+
+#messages ul li {
+    margin-left: -40px;
+}
+
+#messages .alert {
+    border: none;
+    color: #fff;
+}
+
+#messages button.close {
+    color: #fff;
+    opacity: 0.8;
+}
+
+#messages .alert-success {
+    background-color: rgba(46, 204, 113, 0.8);
+}
+
+#messages .alert-error,
+#messages .alert-danger {
+    background-color: rgba(231, 76, 60, 0.8);
+}
+
+#messages .alert-info {
+    background-color: rgba(52, 152, 219, 0.8);
+}
+
+.loader{
+    background-image:url('/img/Preloader_4.gif');
+
+    margin:auto;
+    width: 128px;
+    height: 128px;
+}
+
+.modal-formulario{
+    border:1px solid #DDD;
+    padding:10px 15px 0 15px;
+    border-radius: 5px;
+}
+
+.modal .modal-body {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.app-logo{
+    background-image: url('/img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 120px;
+    text-indent: 110px;
+    height: 50px;
+    width: 227px;
+    display: inline-block;
+    float: left;
+    opacity: 0.5;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.app-logo:hover{
+    opacity:0.8;
+}
+
+.multiselect-container{
+    width: 100%;
+}
+span.multiselect-selected-text {
+    max-width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+.modal .multiselect-container{
+    height: 132px;
+    overflow: scroll;
+}
+
+table.grid th.acoes{
+    min-width:70px;
+}
+
+.background-topo{
+    background-color: rgba(248, 248, 248, 0.95);
+    border: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 1050;
+    width: 100%;
+    box-shadow: 0px 0px 4px .1px rgba(0,0,0,.1);
+}
+
+.modal{
+    z-index: 1060;
+}
+
+.talentos-content{
+    position:relative;
+    top:75px;
+}
+
+.form-rodape{
+    padding:10px 0;
+    font-style: italic;
+    font-size: 12px;
+    border-top:1px dotted #e7e7e7;
+}
+label.obrigatorio:before, span.obrigatorio:before{
+    content: "* ";
+    color: #FF0000;
+}
+
+@media (min-width: 991px) {
+    #modal-visualizar-profissional .modal-dialog,
+    #modal-cadastrar-profissional .modal-dialog{
+        width:60%;
+    }
+    #modal-cadastrar-area .modal-dialog{
+        width:40%;
+    }
+}
+
+.ajax-loader{
+    width: 28px;
+    height: 34px;
+    background-size: 20px;
+    background-image: url('/img/loader.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.modal-footer .ajax-loader{
+    position: relative;
+    float: right;
+}

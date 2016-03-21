@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Talentos
+        psr4_prefix: Talentos
+        src_path: app
