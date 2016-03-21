@@ -401,6 +401,10 @@
             if ($input.hasClass('cep')) {
                 $.getJSON("//viacep.com.br/ws/"+$input.val().replace('-','').replace('.', '') +"/json/?callback=?", function(data) {
                     $popover.html('<i class="glyphicon glyphicon-search"></i>').attr('disabled', false);
+
+                    if (typeof data.localidade !== undefined) {
+                        data.cidade = data.localidade;
+                    }
                     autocompleteEach(data);
                 });
 
@@ -451,7 +455,6 @@
 
     function autocompleteEach(data)
     {
-        console.log(data);
         $.each(data, function(k, v){
             $('.form-evento-participantes select.' + k).val(v);
             $('.form-evento-participantes input.' + k).val(v);
