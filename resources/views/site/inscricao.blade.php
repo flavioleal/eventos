@@ -10,29 +10,100 @@
 					<small>This information will let us know more about you.</small>
 				</h3>
 			</div>
-			<ul>
-				@if (count($perfis) > 1)<li><a href="#tipo-inscricao" data-toggle="tab">Tipo de Inscrição</a></li>@endif
+			<ul class="groups-steps">
+				@if (count($perfis) > 1)<li class="profile-step"><a href="#tipo-inscricao" data-toggle="tab">Tipo de Inscrição</a></li>@endif
 				@foreach ($grupos as $grupo)
-				    <li><a href="#tab-grupo-{{ $grupo['id']  }}" data-toggle="tab">{{ $grupo['titulo']  }}</a></li>
+				    <li data-perfil="{{ $grupo->evento_perfil_id }}"><a href="#tab-grupo-{{ $grupo['id']  }}" data-toggle="tab">{{ $grupo['titulo']  }}</a></li>
 				@endforeach
+
+                @foreach ($perfis as $perfil)
+                    @if ($perfil->exigir_pagamento == 1 && $perfil->valor > 0)
+                    <li data-perfil="{{ $perfil->id }}" class="payment-step"><a href="#payment-step" data-toggle="tab">Forma de pagamento</a></li>
+                    @endif
+                @endforeach
 			</ul>
 
 			<div class="tab-content">
+                <div class="tab-pane" id="payment-step">
+                    <h4 class="info-text"> Selecione a forma de pagamento abaixo</h4>
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="well"> <h3 class="text-center">Valor a pagar: R$ 299.00</h3></div>
+                        </div>
+                        <div class="col-md-offset-2 col-md-4">
+                            <div class="radio">
+                                <label for="billet-method">
+                                    <input name="payment_method" id="billet-method" type="radio">
+                                    <img class="img-responsive" src="/img/payment_method/billet.png">
+                                </label>
+                            </div>
+                            <h6>INFORMAÇÕES SOBRE BOLETOS:</h6>
+                            <p class="text-justify"><small>Vencimento de boletos: 3 dias corridos, observado o limite máximo de 25/06/2016 para emissão.
+                                    Após essa data, não será possível emitir ou pagar através de boleto.
+                                    NÃO É POSSÍVEL PAGAR BOLETO VENCIDO.
+                                    Comunicados sobre pagamentos, comprovantes, etc. serão enviados para seu e-mail.</small></p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label for="pagseguro-method">
+                                    <input name="payment_method" id="pagseguro-method" type="radio">
+                                    <img class="img-responsive" src="/img/payment_method/pagseguro.png">
+                                </label>
+                            </div>
+                            <h6>PAGAMENTOS COM CARTÃO DE CRÉDITO:</h6>
+                            <p class="text-justify"><small>UOL PagSeguro são sites de pagamento com segurança certificada.
+                                    Tenha em mãos o cartão, nome e endereço do titular.
+                                    O cadastro é necessário para sua segurança e poderá utilizá-lo nas futuras compras</small></p>
+                        </div>
+                    </div>
+                </div>
 				@if (count($perfis) > 1)
 				<div class="tab-pane" id="tipo-inscricao">
 					<h4 class="info-text"> Selecione abaixo um dos perfis</h4>
+                    <div class="row">
 					@foreach ($perfis as $perfil)
-						<div class="well col-md-2">
-							<h3>{{ $perfil->titulo }}</h3>
-						</div>
+                        <div class="col-md-6">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">{{ strtoupper($perfil->titulo) }}</h3>
+                                </div>
+                                <div class="panel-body">
+                                    {{ $perfil->descricao }}
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="radio">
+                                                <label for="field-perfil-{{ $perfil->id  }}">
+                                                    <input  name="field-perfil"
+                                                            type="radio"
+                                                            id="field-perfil-{{ $perfil->id  }}"
+                                                            value="{{ $perfil->id }}">
+                                                    Selecionar
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="pull-right text-right">
+                                                <small>@if ($perfil->exigir_pagamento == 0) <b>Gratuito</b>  @else Valor: R$ {{ $perfil->valor }} @endif</small><br>
+                                                <small>Quantidade disponível: {{ $perfil->quantidade }}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 					@endforeach
+                    </div>
 				</div>
+                @else
+                <input  name="field-perfil" type="hidden" value="{{ $perfil[0]->id }}">
 				@endif
 
                 @foreach ($grupos as $grupo)
-                    <div class="tab-pane" id="tab-grupo-{{ $grupo->id  }}">
+                    <div data-perfil="{{ $grupo->evento_perfil_id }}" class="tab-pane" id="tab-grupo-{{ $grupo->id  }}">
                         <h4 class="info-text"> Preencha os campos do formulário abaixo</h4>
-
                         @foreach ($campos as $campo)
                             @if ($campo->evento_perfil_grupo_id == $grupo->id)
 
@@ -64,7 +135,7 @@
                                                 @endif
                                                 data-classe="{{ $campo->classe }}"
                                                 class="field-text form-control {{ $campo->classe  }}"
-                                                name="text-{{ $campo->id  }}"
+                                                name="field[text-{{ $campo->id  }}]"
                                                 @if (!empty($campo->mascara)) data-mascara="{{ $campo->mascara }}" @endif
                                                 type="text"
                                             />
@@ -89,7 +160,7 @@
                                             data-autocomplete="{{ $campo->autocomplete }}"
                                             @if ($campo->obrigatorio) required @endif
                                             class="field-number form-control {{ $campo->classe  }}"
-                                            name="number-{{ $campo->id  }}"
+                                            name="field[number-{{ $campo->id  }}]"
                                             @if (!empty($campo->mascara)) data-mascara="{{ $campo->mascara }}" @endif
                                             type="number"
                                         />
@@ -105,7 +176,7 @@
                                                 data-autocomplete="{{ $campo->autocomplete }}"
                                                 @if ($campo->obrigatorio) required @endif
                                                 class="field-datetime form-control {{ $campo->classe  }}"
-                                                name="date-{{ $campo->id  }}"
+                                                name="field[date-{{ $campo->id  }}]"
                                                 @if (!empty($campo->mascara)) data-mascara="{{ $campo->mascara }}" @endif
                                                 type="text"
                                             />
@@ -122,7 +193,7 @@
                                                 data-autocomplete="{{ $campo->autocomplete }}"
                                                 @if ($campo->obrigatorio) required @endif
                                                 class="field-money form-control {{ $campo->classe  }}"
-                                                name="money-{{ $campo->id  }}"
+                                                name="field[money-{{ $campo->id  }}]"
                                                 @if (!empty($campo->mascara)) data-mascara="{{ $campo->mascara }}" @endif
                                                 type="text"
                                             />
@@ -137,7 +208,7 @@
                                             data-autocomplete="{{ $campo->autocomplete }}"
                                             @if ($campo->obrigatorio) required @endif
                                             class="field-longtext form-control {{ $campo->classe  }}"
-                                            name="textarea-{{ $campo->id  }}"
+                                            name="field[textarea-{{ $campo->id  }}]"
                                             @if (!empty($campo->mascara)) data-mascara="{{ $campo->mascara }}" @endif
                                         ></textarea>
                                     @endif
@@ -155,7 +226,7 @@
                                                             id="field-{{ $campo->id  }}-{{ $alternativa->id }}"
                                                             @if ($campo->obrigatorio) required @endif
                                                             class="field-checkbox {{ $campo->classe  }}"
-                                                            name="checkbox-{{ $campo->id  }}[]"
+                                                            name="field[checkbox-{{ $campo->id }}][{{ $alternativa->id  }}]"
                                                             type="checkbox"
                                                         />
                                                         {{ $alternativa->alternativa }}
@@ -179,7 +250,7 @@
                                                     @if ($campo->obrigatorio) required @endif
                                                     class="field-radio {{ $campo->classe  }}"
                                                     type="radio"
-                                                    name="radio-{{ $campo->id  }}"
+                                                    name="field[radio-{{ $campo->id  }}]"
                                                     />
                                                     {{ $alternativa->alternativa }}
                                                 </label>
@@ -196,7 +267,7 @@
                                             data-autocomplete="{{ $campo->autocomplete }}"
                                             @if ($campo->obrigatorio) required @endif
                                             class="field-select {{ $campo->classe  }} form-control"
-                                            name="select-{{ $campo->id  }}">
+                                            name="field[select-{{ $campo->id  }}]">
                                                 <option value=""></option>
                                             @foreach ($alternativas as $alternativa)
                                                 @if($alternativa->campo_id == $campo->id)
@@ -214,7 +285,7 @@
                                             data-autocomplete="{{ $campo->autocomplete }}"
                                             @if ($campo->obrigatorio) required @endif
                                             class="field-file form-control {{ $campo->classe  }}"
-                                            name="file-{{ $campo->id  }}"
+                                            name="field[file-{{ $campo->id  }}]"
                                             type="file"
                                         />
                                     @endif
@@ -231,11 +302,10 @@
                 @endforeach
 			</div>
 
-			<div class="wizard-footer">
+			<div class="wizard-footer ">
 				<div class="pull-right">
 					<input type='button' class='btn-next btn-lg compumake-btn-orange compumake-btn' name='next' value='Próximo' />
-					<input type='button' class='btn-finish btn-lg compumake-btn-orange compumake-btn' name='finish' value='Finalizar' />
-
+					<input type='submit' class='btn-finish btn-lg compumake-btn-orange compumake-btn' name='finish' value='Finalizar' />
 				</div>
 
 				<div class="pull-left">
@@ -247,7 +317,6 @@
 	</div>
 </div>
 
-
 <link href="/js/x-bootstrap-wizard-v1.1/assets/css/gsdk-base.css" rel="stylesheet" />
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
 <!--   plugins 	 -->
@@ -256,16 +325,13 @@
 <script src="/js/x-bootstrap-wizard-v1.1/assets/js/jquery.validate.min.js"></script>
 <!--  methods for manipulating the wizard and the validation -->
 <script src="/js/x-bootstrap-wizard-v1.1/assets/js/wizard.js"></script>
-
 <script src="/js/jquery.mask.js"></script>
-
 <script src="/js/datepicker/js/bootstrap-datepicker.js"></script>
 <script src="/js/datepicker/locales/bootstrap-datepicker.pt-BR.min.js"></script>
 
 <link href="/js/datepicker/css/bootstrap-datepicker.css" rel="stylesheet">
 
 <script type="text/javascript">
-
     function stringToDate(string)
     {
         var arr = string.split('/');
@@ -278,6 +344,39 @@
     var $loader = $('.loader-css').clone();
 
 	$(document).ready(function(){
+        var request;
+        $('form#form-evento').on('submit', function(e){
+
+            var $clone = $(this).clone();
+            var perfil = $('[name="field-perfil"]:checked').val();
+            $clone.find('.tab-pane[data-perfil!=' + perfil + ']').not('#payment-step, #tipo-inscricao').remove();
+
+            e.preventDefault();
+            request = $.ajax({
+                url: ENDERECO + '/evento/store',
+                dataType: 'json',
+                type: 'post',
+                data: $clone.serialize()
+            }).done(function(data){
+                console.log(data);
+            });
+            return false;
+        });
+
+        $groupsSteps = $('ul.groups-steps').clone();
+
+        $('#tipo-inscricao [type="radio"]').on('change', function(){
+            var valor = $(this).val();
+            $ul = $('ul.groups-steps');
+            $ul.find('li').not('.profile-step').remove();
+            $groupsSteps.find('li[data-perfil='+ valor +']').clone().appendTo($ul);
+
+            var percent = 100 / $ul.find('li').length;
+            $ul.find('li').css('width', percent + '%');
+            $('.wizard-card').data('bootstrapWizard').resetWizard();
+        });
+
+        $('#tipo-inscricao [type="radio"]').first().prop('checked', true).trigger('change');
 
 		$('.field-datetime').datepicker({
 			language: "pt-BR",

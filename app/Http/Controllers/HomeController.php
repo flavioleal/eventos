@@ -4,16 +4,19 @@ use Symfony\Component\HttpFoundation\Response;
 use Talentos\Http\Requests;
 use Illuminate\Http\Request;
 use Talentos\Eventos;
-use Talentos\EventoPerfilGrupos;
 use Talentos\Arquivos;
 use Goutte\Client;
-use Cpf;
-use Cnpj;
+use JansenFelipe\CpfGratis as Cpf;
+use JansenFelipe\CnpjGratis\CnpjGratis as Cnpj;
+use Illuminate\Support\Facades\DB;
 
-use DB;
+use Talentos\Contatos;
+use Talentos\Participantes;
+use Talentos\ParticipanteCampos;
+use Talentos\ParticipanteCampoAlternativas;
 
-class HomeController extends Controller {
-
+class HomeController extends Controller
+{
 	/**
 	 * Show the application dashboard to the userbv.
 	 *
@@ -36,6 +39,7 @@ class HomeController extends Controller {
 
 		return view('site.inscricao',
 			[
+                'evento' => $id,
 				'perfis' => $perfis,
 				'campos' => $campos,
                 'condicoes' => $condicoes,
@@ -147,12 +151,21 @@ class HomeController extends Controller {
 		return Eventos::select(
 			"evento_perfis.evento_id",
 			"evento_perfis.id",
-			"evento_perfis.titulo"
+			"evento_perfis.titulo",
+            "evento_perfis.descricao",
+            "evento_perfis.valor",
+            "evento_perfis.exigir_pagamento",
+            "evento_perfis.quantidade"
 		)
 			->join('evento_perfis', function($join){
 				$join->on('evento_perfis.evento_id', '=', 'eventos.id');
 			})
 			->where('eventos.id', '=', $id)
+            ->whereExists(function ($query) {
+                $query->select(DB::raw(1))
+                    ->from('campos')
+                    ->whereRaw('campos.evento_perfil_id = evento_perfis.id');
+            })
 			->get();
 	}
 
@@ -301,6 +314,60 @@ class HomeController extends Controller {
             'cidade' => trim(explode('/', $crawler->filter('.respostadestaque')->eq(2)->html())[0]),
             'uf' => trim(explode('/', $crawler->filter('.respostadestaque')->eq(2)->html())[1]),
         ]);
+    }
+
+    public function store(Request $request)
+    {
+        $input = $request->all();
+
+        $contato = Contatos::create(
+            ['nome' => $_SERVER['REMOTE_ADDR']]
+        );
+
+        if (empty($contato->id)) {
+            return Response::json( ['status' => 0, 'message' => 'Failure to insert contact'] );
+        }
+
+        $participante = Participantes::create(
+            [
+                'contato_id' => $contato->id,
+                'evento_perfil_id' => $input['field-perfil']
+            ]
+        );
+
+        if (empty($participante->id)) {
+            return Response::json( ['status' => 0, 'message' => 'Failure to insert participant'] );
+        }
+
+        foreach ($input['field'] as $campo => $valor) {
+            $campo_id = explode('-', $campo);
+            $campo = ParticipanteCampos::create(
+                [
+                    'campo_id' => $campo_id[1],
+                    'participante_id' => $participante->id,
+                    'valor' => is_array($valor) ? null : $valor
+                ]
+            );
+
+            if (is_array($valor) && !empty($campo->id)) {
+
+                foreach ($valor as $k => $v) {
+                    ParticipanteCampoAlternativas::create(
+                        [
+                            'participante_campo_id' => $campo->id,
+                            'campo_alternativa_id' => $k
+                    ]
+                    );
+                }
+            }
+
+        }
+
+        $response = [
+            'status'	=> '1'
+        ];
+
+        return Response::json( $response );
     }
 
 }

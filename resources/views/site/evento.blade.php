@@ -14,6 +14,15 @@
 		background-color: {{ $evento->cor_predominante }} !important;
 	}
 
+	.panel-primary > .panel-heading {
+		background-color: {{ $evento->cor_predominante }};
+		border-color: {{ $evento->cor_predominante }} !important;
+	}
+
+	.panel-primary {
+		border-color: {{ $evento->cor_predominante }} !important;
+	}
+
 	.compumake-btn-orange:hover{
 		background-color: {{ $evento->cor_predominante }};
 	}
@@ -31,12 +40,12 @@
     	border-color: {{ $evento->cor_predominante }};
 	}
 
-	.pagina-interna-conteudo h3{
+	.pagina-interna-conteudo > h3{
 		color: {{ $evento->cor_predominante }};
 	}
 
-	.pagina-interna-conteudo .conteudo-entrada p,
-	.pagina-interna-conteudo .conteudo-entrada span{
+	.pagina-interna-conteudo .conteudo-entrada > p,
+	.pagina-interna-conteudo .conteudo-entrada > span{
 		font-family: 'Source Sans Pro' !important;
 		line-height: 18px !important;
 		color: {{ $evento->cor_texto }} !important;
@@ -78,7 +87,7 @@
 
 	label.error {
 		position: absolute;
-		left: 0px;
+		right: 0px;
 		bottom: -20px;
 	}
 
@@ -381,7 +390,13 @@
 </footer>
 
 <script>
+	var page = $("html, body");
+
 	$(document).ready(function() {
+
+		page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+			page.stop();
+		});
 
 		$('#btn-inscricao').on('click',function(e){
 			e.preventDefault();
@@ -402,7 +417,7 @@
 			$('.conteudo-entrada').fadeIn();
 		});
 
-		$('#btn-inscricao').trigger('click');
+		//$('#btn-inscricao').trigger('click');
 	});
 	var marker,map, infowindow;
 	function initMap() {

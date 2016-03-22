@@ -509,7 +509,6 @@ CREATE TABLE IF NOT EXISTS `eventos`.`participante_campo` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-
 -- -----------------------------------------------------
 -- Table `eventos`.`participante_campo_alternativa`
 -- -----------------------------------------------------
@@ -529,7 +528,6 @@ CREATE TABLE IF NOT EXISTS `eventos`.`participante_campo_alternativa` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
-
 
 -- -----------------------------------------------------
 -- Table `eventos`.`tipo_pagamento`

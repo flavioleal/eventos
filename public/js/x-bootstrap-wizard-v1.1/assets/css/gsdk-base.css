@@ -1,4 +1,7 @@
 
+.form-group {
+    position: relative;
+}
 .form-control::-moz-placeholder{
    color: #DDDDDD;
    opacity: 1;
@@ -185,6 +188,7 @@ label.error{
     color: #FF3B30;    
     margin-top: 5px;
     margin-bottom: 0;
+    font-size: 12px;
 
 }
 

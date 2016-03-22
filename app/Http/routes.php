@@ -44,6 +44,14 @@ Route::post(
 );
 
 Route::post(
+	'evento/store',
+	[
+		'as'=>'site.eventoStore',
+		'uses'=>'HomeController@store'
+	]
+);
+
+Route::post(
 	'cpf',
 	[
 		'as'=>'site.cpf',

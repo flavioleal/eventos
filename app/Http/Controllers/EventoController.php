@@ -726,11 +726,19 @@ class EventoController extends Controller
 		return Response::json( ['status' => 1, 'mensagem' => 'Campos reordenados com sucesso.'] );	
 	}
 
+	/**
+	 * @param $input
+	 * @param $in
+	 * @param $out
+	 * @return string
+	 */
 	private function date_convert($input,$in,$out)
     {
-		/*Converte formato das datas*/
 		$data = \DateTime::createFromFormat($in, $input);
-		$input = $data->format($out);
+
+		if ($data instanceof \DateTimeInterface) {
+			$input = $data->format($out);
+		}
 
 		return $input;
 	}

@@ -2,309 +2,309 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11ec2480-9862-475c-94cc-8661379e7e21" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Helpers/Charts.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/Services/Charts.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Arquivo Comprimido.zip" afterPath="$PROJECT_DIR$/Arquivo Comprimido.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Handlers/Commands/.gitkeep" afterPath="$PROJECT_DIR$/app/Handlers/Commands/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Handlers/Events/.gitkeep" afterPath="$PROJECT_DIR$/app/Handlers/Events/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/.gitkeep" afterPath="$PROJECT_DIR$/database/migrations/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/.gitkeep" afterPath="$PROJECT_DIR$/database/seeds/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/backgrounds/56.png" afterPath="$PROJECT_DIR$/public/img/backgrounds/56.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/banners/57.jpg" afterPath="$PROJECT_DIR$/public/img/banners/57.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/banners/61.jpg" afterPath="$PROJECT_DIR$/public/img/banners/61.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/footer/acroy-footer-logo.png" afterPath="$PROJECT_DIR$/public/img/footer/acroy-footer-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/footer/icon-map.png" afterPath="$PROJECT_DIR$/public/img/footer/icon-map.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/footer/icon-phone.png" afterPath="$PROJECT_DIR$/public/img/footer/icon-phone.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/footer/social-sprites.png" afterPath="$PROJECT_DIR$/public/img/footer/social-sprites.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon-black-phone.png" afterPath="$PROJECT_DIR$/public/img/icon-black-phone.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/android-icon-144x144.png" afterPath="$PROJECT_DIR$/public/img/icon/android-icon-144x144.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/android-icon-192x192.png" afterPath="$PROJECT_DIR$/public/img/icon/android-icon-192x192.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/android-icon-36x36.png" afterPath="$PROJECT_DIR$/public/img/icon/android-icon-36x36.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/android-icon-48x48.png" afterPath="$PROJECT_DIR$/public/img/icon/android-icon-48x48.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/android-icon-72x72.png" afterPath="$PROJECT_DIR$/public/img/icon/android-icon-72x72.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/android-icon-96x96.png" afterPath="$PROJECT_DIR$/public/img/icon/android-icon-96x96.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-114x114.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-114x114.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-120x120.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-120x120.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-144x144.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-144x144.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-152x152.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-152x152.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-180x180.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-180x180.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-57x57.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-57x57.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-60x60.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-60x60.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-72x72.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-72x72.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-76x76.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-76x76.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-precomposed.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-precomposed.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/favicon-16x16.png" afterPath="$PROJECT_DIR$/public/img/icon/favicon-16x16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/favicon-32x32.png" afterPath="$PROJECT_DIR$/public/img/icon/favicon-32x32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/favicon-96x96.png" afterPath="$PROJECT_DIR$/public/img/icon/favicon-96x96.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/favicon.ico" afterPath="$PROJECT_DIR$/public/img/icon/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/ms-icon-144x144.png" afterPath="$PROJECT_DIR$/public/img/icon/ms-icon-144x144.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/ms-icon-150x150.png" afterPath="$PROJECT_DIR$/public/img/icon/ms-icon-150x150.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/ms-icon-310x310.png" afterPath="$PROJECT_DIR$/public/img/icon/ms-icon-310x310.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/ms-icon-70x70.png" afterPath="$PROJECT_DIR$/public/img/icon/ms-icon-70x70.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/logos/55.png" afterPath="$PROJECT_DIR$/public/img/logos/55.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/logos/58.png" afterPath="$PROJECT_DIR$/public/img/logos/58.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1.zip" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/Creative Tim License 2015.pdf" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/Creative Tim License 2015.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/default-avatar.png" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/default-avatar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/favicon.ico" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/new_logo.png" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/new_logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/thumb_list_boat.png" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/thumb_list_boat.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/thumb_list_place.png" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/thumb_list_place.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/thumb_register.png" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/thumb_register.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/tim_80x80.png" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/tim_80x80.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/wizard-boat.jpg" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/wizard-boat.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/wizard-city.jpg" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/wizard-city.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/wizard.jpg" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/wizard.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/.gitkeep" afterPath="$PROJECT_DIR$/resources/views/vendor/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env.example" afterPath="$PROJECT_DIR$/.env.example" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="$PROJECT_DIR$/.gitattributes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blade.xml" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/talentos.iml" afterPath="$PROJECT_DIR$/.idea/talentos.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Arquivos.php" afterPath="$PROJECT_DIR$/app/Arquivos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/CampoAlternativas.php" afterPath="$PROJECT_DIR$/app/CampoAlternativas.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/CampoAlternativasModelos.php" afterPath="$PROJECT_DIR$/app/CampoAlternativasModelos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/CampoCondicoes.php" afterPath="$PROJECT_DIR$/app/CampoCondicoes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/CampoTipos.php" afterPath="$PROJECT_DIR$/app/CampoTipos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Campos.php" afterPath="$PROJECT_DIR$/app/Campos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/CamposModelos.php" afterPath="$PROJECT_DIR$/app/CamposModelos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Commands/Command.php" afterPath="$PROJECT_DIR$/app/Commands/Command.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" afterPath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Kernel.php" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Helpers/Charts.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Contatos.php" afterPath="$PROJECT_DIR$/app/Contatos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/CupomDescontos.php" afterPath="$PROJECT_DIR$/app/CupomDescontos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Empresas.php" afterPath="$PROJECT_DIR$/app/Empresas.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/EventoOrganizadores.php" afterPath="$PROJECT_DIR$/app/EventoOrganizadores.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/EventoPerfilGrupos.php" afterPath="$PROJECT_DIR$/app/EventoPerfilGrupos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/EventoPerfis.php" afterPath="$PROJECT_DIR$/app/EventoPerfis.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Eventos.php" afterPath="$PROJECT_DIR$/app/Eventos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Events/Event.php" afterPath="$PROJECT_DIR$/app/Events/Event.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Handlers/Events/AuthLoginEventHandler.php" afterPath="$PROJECT_DIR$/app/Handlers/Events/AuthLoginEventHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/EventoController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventoController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PerfilController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PerfilController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckRole.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckRole.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/AreaRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/AreaRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/CampoCondicoesRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/CampoCondicoesRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/EmpresaRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/EmpresaRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/ProfissionalRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/ProfissionalRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/Request.php" afterPath="$PROJECT_DIR$/app/Http/Requests/Request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/helpers.php" afterPath="$PROJECT_DIR$/app/Http/helpers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Organizadores.php" afterPath="$PROJECT_DIR$/app/Organizadores.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/BusServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/BusServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/ChartsServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/ChartsServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/ConfigServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/ConfigServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_light_sidebar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_light_sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blade.xml" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/HelperServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/HelperServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/MacroServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/MacroServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Role.php" afterPath="$PROJECT_DIR$/app/Role.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/Macros.php" afterPath="$PROJECT_DIR$/app/Services/Macros.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/Registrar.php" afterPath="$PROJECT_DIR$/app/Services/Registrar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/test.sql" afterPath="$PROJECT_DIR$/app/test.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/app.php" afterPath="$PROJECT_DIR$/bootstrap/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/autoload.php" afterPath="$PROJECT_DIR$/bootstrap/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/auth.php" afterPath="$PROJECT_DIR$/config/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/cache.php" afterPath="$PROJECT_DIR$/config/cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/compile.php" afterPath="$PROJECT_DIR$/config/compile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/filesystems.php" afterPath="$PROJECT_DIR$/config/filesystems.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mail.php" afterPath="$PROJECT_DIR$/config/mail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/services.php" afterPath="$PROJECT_DIR$/config/services.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/session.php" afterPath="$PROJECT_DIR$/config/session.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/view.php" afterPath="$PROJECT_DIR$/config/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/.gitignore" afterPath="$PROJECT_DIR$/database/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/campos_alter.sql" afterPath="$PROJECT_DIR$/database/campos_alter.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/campos_modelos.sql" afterPath="$PROJECT_DIR$/database/campos_modelos.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/compumake.sql" afterPath="$PROJECT_DIR$/database/compumake.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/eventos.sql" afterPath="$PROJECT_DIR$/database/eventos.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/eventos_alter.sql" afterPath="$PROJECT_DIR$/database/eventos_alter.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/inserts.sql" afterPath="$PROJECT_DIR$/database/inserts.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_26_003913_create_profissionals_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_26_003913_create_profissionals_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_26_012444_localidade_to_profissionals.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_26_012444_localidade_to_profissionals.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_26_152803_create_faixa_salarials_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_26_152803_create_faixa_salarials_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_26_152807_create_faixa_etarias_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_26_152807_create_faixa_etarias_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_26_153616_alter_profissionals.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_26_153616_alter_profissionals.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_28_021323_create_areas_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_28_021323_create_areas_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_28_022511_create_profissional_areas_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_28_022511_create_profissional_areas_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_09_211955_create_roles_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_09_211955_create_roles_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_09_215115_alter_users_roles.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_09_215115_alter_users_roles.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_09_224255_create_empresas_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_09_224255_create_empresas_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_12_082744_create_v_faixa_etaria_profissionals_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_12_082744_create_v_faixa_etaria_profissionals_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_12_082802_create_v_faixa_salarial_profissionals_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_12_082802_create_v_faixa_salarial_profissionals_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_12_093746_alter_users_last_login.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_12_093746_alter_users_last_login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_16_221601_create_profissional_solicitacaos_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_16_221601_create_profissional_solicitacaos_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_16_231246_create_v_profissional_area_solicitacaos_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_16_231246_create_v_profissional_area_solicitacaos_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_19_074040_create_v_empresa_solicitacaos_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_19_074040_create_v_empresa_solicitacaos_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_19_074147_alter_empresa_ativo.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_19_074147_alter_empresa_ativo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_19_153610_alter_users_ativo.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_19_153610_alter_users_ativo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_19_165819_create_v_profissionals_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_19_165819_create_v_profissionals_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_20_015817_cache.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_20_015817_cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/municipio_insert.sql" afterPath="$PROJECT_DIR$/database/municipio_insert.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/RoleTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/RoleTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/sisloc.sql" afterPath="$PROJECT_DIR$/database/sisloc.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/statics.sql" afterPath="$PROJECT_DIR$/database/statics.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/talentos.sql" afterPath="$PROJECT_DIR$/database/talentos.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/talentos_views.sql" afterPath="$PROJECT_DIR$/database/talentos_views.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/v_empresa_solicitacaos.sql" afterPath="$PROJECT_DIR$/database/v_empresa_solicitacaos.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/v_profissional_area_solicitacaos.sql" afterPath="$PROJECT_DIR$/database/v_profissional_area_solicitacaos.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/v_profissionals.sql" afterPath="$PROJECT_DIR$/database/v_profissionals.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database_name.sql" afterPath="$PROJECT_DIR$/database_name.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventos_1511.sql" afterPath="$PROJECT_DIR$/eventos_1511.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpspec.yml" afterPath="$PROJECT_DIR$/phpspec.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml" afterPath="$PROJECT_DIR$/phpunit.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/browserconfig.xml" afterPath="$PROJECT_DIR$/public/img/icon/browserconfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/manifest.json" afterPath="$PROJECT_DIR$/public/img/icon/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.mask.js" afterPath="$PROJECT_DIR$/public/js/jquery.mask.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/README.md" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/chart-js.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/chart-js.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/pt-BR/validation.php" afterPath="$PROJECT_DIR$/resources/lang/pt-BR/validation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_wide_sidebar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_wide_sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/thumb_register.png" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/thumb_register.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Arquivos.php" afterPath="$PROJECT_DIR$/app/Arquivos.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/ExampleTest.php" afterPath="$PROJECT_DIR$/tests/ExampleTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/gallery_v2.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/gallery_v2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/css/gsdk-base.css" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/css/gsdk-base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/jquery-1.10.2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/jquery.validate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/wizard.js" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/wizard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/index.html" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/wizard-list-boat.html" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/wizard-list-boat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/wizard-list-place.html" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/wizard-list-place.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/app.less" afterPath="$PROJECT_DIR$/resources/assets/less/app.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" afterPath="$PROJECT_DIR$/resources/lang/en/passwords.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/pt-BR/auth.php" afterPath="$PROJECT_DIR$/resources/lang/pt-BR/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/pt-BR/pagination.php" afterPath="$PROJECT_DIR$/resources/lang/pt-BR/pagination.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/pt-BR/passwords.php" afterPath="$PROJECT_DIR$/resources/lang/pt-BR/passwords.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/pt-BR/validation.php" afterPath="$PROJECT_DIR$/resources/lang/pt-BR/validation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.old.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.old.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/area/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/area/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/area/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/area/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/area/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/area/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.old.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.old.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/password.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/password.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/reset.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/reset.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/calendar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/chart-flot.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/chart-flot.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/chart-js.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/chart-js.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/chart-morris.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/chart-morris.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/email_compose.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/email_compose.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/email_detail.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/email_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/email_inbox.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/email_inbox.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/email_inbox_v2.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/email_inbox_v2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/email_newsletter.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/email_newsletter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/email_system.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/email_system.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/extra_404_error.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/extra_404_error.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/extra_coming_soon.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/extra_coming_soon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/extra_invoice.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/extra_invoice.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/extra_profile.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/extra_profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/extra_search_results.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/extra_search_results.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/extra_timeline.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/extra_timeline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_editable-c=inline.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_editable-c=inline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_editable.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_editable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_elements.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_elements.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_multiple_upload.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_multiple_upload.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_plugins.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_plugins.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_slider_switcher.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_slider_switcher.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_validation.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_validation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_wizards.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_wizards.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_wizards_validation.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_wizards_validation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_wysiwyg.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_wysiwyg.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/gallery.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/gallery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/gallery_v2.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/gallery_v2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/helper_css.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/helper_css.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/index_v2.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/index_v2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/login.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/login_v2.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/login_v2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/login_v3.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/login_v3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/map_google.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/map_google.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/map_vector.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/map_vector.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_blank.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_blank.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Handlers/Events/AuthLoginEventHandler.php" afterPath="$PROJECT_DIR$/app/Handlers/Events/AuthLoginEventHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_19_153610_alter_users_ativo.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_19_153610_alter_users_ativo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Organizadores.php" afterPath="$PROJECT_DIR$/app/Organizadores.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/banners/61.jpg" afterPath="$PROJECT_DIR$/public/img/banners/61.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_full_height.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_full_height.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_footer.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_ionicons.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_ionicons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_light_sidebar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_light_sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_line_icons.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_line_icons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_mega_menu.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_mega_menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_minified_sidebar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_minified_sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_right_sidebar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_right_sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_two_sidebar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_two_sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_wide_sidebar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_wide_sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_without_sidebar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_without_sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/register_v3.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/register_v3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_basic.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_basic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_autofill.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_autofill.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_colreorder.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_colreorder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_colvis.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_colvis.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_combine.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_combine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_fixed_columns.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_fixed_columns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_fixed_header.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_fixed_header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_keytable.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_keytable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_responsive.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_responsive.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_scroller.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_scroller.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_tabletools.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_tabletools.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_buttons.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_buttons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_general.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_general.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_icons.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_icons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_ionicons.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_ionicons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/view.php" afterPath="$PROJECT_DIR$/config/view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_language_bar_icon.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_language_bar_icon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_media_object.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_media_object.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_modal_notification.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_modal_notification.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_simple_line_icons.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_simple_line_icons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_tabs_accordions.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_tabs_accordions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_tree.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/campos_alter.sql" afterPath="$PROJECT_DIR$/database/campos_alter.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/talentos_views.sql" afterPath="$PROJECT_DIR$/database/talentos_views.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/v_profissional_area_solicitacaos.sql" afterPath="$PROJECT_DIR$/database/v_profissional_area_solicitacaos.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env.example" afterPath="$PROJECT_DIR$/.env.example" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_typography.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_typography.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_unlimited_tabs.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_unlimited_tabs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_widget_boxes.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_widget_boxes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/emails/password.blade.php" afterPath="$PROJECT_DIR$/resources/views/emails/password.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/errors/503.blade.php" afterPath="$PROJECT_DIR$/resources/views/errors/503.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/helpers.php" afterPath="$PROJECT_DIR$/app/Http/helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/auth.php" afterPath="$PROJECT_DIR$/config/auth.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/footer/social-sprites.png" afterPath="$PROJECT_DIR$/public/img/footer/social-sprites.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.old.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.old.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" afterPath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_scroller.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_scroller.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/evento/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/evento/create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/Macros.php" afterPath="$PROJECT_DIR$/app/Services/Macros.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-120x120.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-120x120.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-57x57.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-57x57.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/wizard-boat.jpg" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/wizard-boat.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/gallery.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/gallery.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_editable.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_editable.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_general.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_general.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/favicon-16x16.png" afterPath="$PROJECT_DIR$/public/img/icon/favicon-16x16.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/tim_80x80.png" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/tim_80x80.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/sisloc.sql" afterPath="$PROJECT_DIR$/database/sisloc.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_icons.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_icons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/inserts.sql" afterPath="$PROJECT_DIR$/database/inserts.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_blank.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_blank.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_colvis.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_colvis.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/cnpj.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/cnpj.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_28_022511_create_profissional_areas_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_28_022511_create_profissional_areas_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/cpf.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/cpf.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/evento.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/evento.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/inscricao.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/inscricao.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_tabs_accordions.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_tabs_accordions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/talentos.sql" afterPath="$PROJECT_DIR$/database/talentos.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/area/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/area/edit.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/usuario/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/usuario/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/usuario/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/usuario/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_basic.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_basic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_ionicons.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_ionicons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/favicon.ico" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/README.md" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_wizards.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_wizards.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/map_vector.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/map_vector.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_elements.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_elements.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/browserconfig.xml" afterPath="$PROJECT_DIR$/public/img/icon/browserconfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/cnpj.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/cnpj.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_20_015817_cache.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_20_015817_cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/android-icon-144x144.png" afterPath="$PROJECT_DIR$/public/img/icon/android-icon-144x144.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Role.php" afterPath="$PROJECT_DIR$/app/Role.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/CamposModelos.php" afterPath="$PROJECT_DIR$/app/CamposModelos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/favicon-32x32.png" afterPath="$PROJECT_DIR$/public/img/icon/favicon-32x32.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database_name.sql" afterPath="$PROJECT_DIR$/database_name.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/extra_search_results.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/extra_search_results.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/errors/503.blade.php" afterPath="$PROJECT_DIR$/resources/views/errors/503.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_modal_notification.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_modal_notification.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/talentos.iml" afterPath="$PROJECT_DIR$/.idea/talentos.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Eventos.php" afterPath="$PROJECT_DIR$/app/Eventos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/.gitkeep" afterPath="$PROJECT_DIR$/database/seeds/.gitkeep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/eventos_alter.sql" afterPath="$PROJECT_DIR$/database/eventos_alter.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Handlers/Commands/.gitkeep" afterPath="$PROJECT_DIR$/app/Handlers/Commands/.gitkeep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/services.php" afterPath="$PROJECT_DIR$/config/services.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_footer.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/footer/icon-map.png" afterPath="$PROJECT_DIR$/public/img/footer/icon-map.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-144x144.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-144x144.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_buttons.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_buttons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/ConfigServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/ConfigServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/.gitignore" afterPath="$PROJECT_DIR$/database/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/campos_modelos.sql" afterPath="$PROJECT_DIR$/database/campos_modelos.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/AreaRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/AreaRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_26_152807_create_faixa_etarias_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_26_152807_create_faixa_etarias_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/extra_timeline.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/extra_timeline.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-60x60.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-60x60.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/EventoPerfis.php" afterPath="$PROJECT_DIR$/app/EventoPerfis.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/calendar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/calendar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Handlers/Events/.gitkeep" afterPath="$PROJECT_DIR$/app/Handlers/Events/.gitkeep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/emails/password.blade.php" afterPath="$PROJECT_DIR$/resources/views/emails/password.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/email_inbox.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/email_inbox.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_mega_menu.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_mega_menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/login.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/map_google.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/map_google.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_keytable.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_keytable.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Empresas.php" afterPath="$PROJECT_DIR$/app/Empresas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-precomposed.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-precomposed.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/EventoPerfilGrupos.php" afterPath="$PROJECT_DIR$/app/EventoPerfilGrupos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/android-icon-192x192.png" afterPath="$PROJECT_DIR$/public/img/icon/android-icon-192x192.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_fixed_header.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_fixed_header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/helper_css.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/helper_css.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/filesystems.php" afterPath="$PROJECT_DIR$/config/filesystems.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/inscricao.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/inscricao.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/ms-icon-144x144.png" afterPath="$PROJECT_DIR$/public/img/icon/ms-icon-144x144.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/index.html" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon-black-phone.png" afterPath="$PROJECT_DIR$/public/img/icon-black-phone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/favicon.ico" afterPath="$PROJECT_DIR$/public/img/icon/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_tree.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/compumake.sql" afterPath="$PROJECT_DIR$/database/compumake.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/email_newsletter.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/email_newsletter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/register_v3.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/register_v3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PerfilController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PerfilController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_28_021323_create_areas_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_28_021323_create_areas_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/statics.sql" afterPath="$PROJECT_DIR$/database/statics.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_unlimited_tabs.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_unlimited_tabs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/default-avatar.png" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/default-avatar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_minified_sidebar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_minified_sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/thumb_list_boat.png" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/thumb_list_boat.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.mask.js" afterPath="$PROJECT_DIR$/public/js/jquery.mask.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/CampoAlternativasModelos.php" afterPath="$PROJECT_DIR$/app/CampoAlternativasModelos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/autoload.php" afterPath="$PROJECT_DIR$/bootstrap/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Campos.php" afterPath="$PROJECT_DIR$/app/Campos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_26_012444_localidade_to_profissionals.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_26_012444_localidade_to_profissionals.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/wizard-city.jpg" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/wizard-city.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/android-icon-96x96.png" afterPath="$PROJECT_DIR$/public/img/icon/android-icon-96x96.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/compile.php" afterPath="$PROJECT_DIR$/config/compile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventos_1511.sql" afterPath="$PROJECT_DIR$/eventos_1511.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/ProfissionalRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/ProfissionalRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml" afterPath="$PROJECT_DIR$/phpunit.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/email_detail.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/email_detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/chart-flot.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/chart-flot.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_multiple_upload.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_multiple_upload.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_editable-c=inline.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_editable-c=inline.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="$PROJECT_DIR$/.gitattributes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/Creative Tim License 2015.pdf" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/Creative Tim License 2015.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/logos/55.png" afterPath="$PROJECT_DIR$/public/img/logos/55.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_ionicons.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_ionicons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-180x180.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-180x180.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/banners/57.jpg" afterPath="$PROJECT_DIR$/public/img/banners/57.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/favicon-96x96.png" afterPath="$PROJECT_DIR$/public/img/icon/favicon-96x96.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/app.less" afterPath="$PROJECT_DIR$/resources/assets/less/app.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/email_compose.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/email_compose.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/EventoOrganizadores.php" afterPath="$PROJECT_DIR$/app/EventoOrganizadores.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/thumb_list_place.png" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/thumb_list_place.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/usuario/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/usuario/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/v_empresa_solicitacaos.sql" afterPath="$PROJECT_DIR$/database/v_empresa_solicitacaos.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/jquery.validate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/EventoController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpspec.yml" afterPath="$PROJECT_DIR$/phpspec.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/new_logo.png" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/new_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_line_icons.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_line_icons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/extra_invoice.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/extra_invoice.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_26_003913_create_profissionals_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_26_003913_create_profissionals_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/email_system.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/email_system.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Kernel.php" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/.gitkeep" afterPath="$PROJECT_DIR$/resources/views/vendor/.gitkeep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/email_inbox_v2.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/email_inbox_v2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_two_sidebar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_two_sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_26_152803_create_faixa_salarials_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_26_152803_create_faixa_salarials_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/extra_profile.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/extra_profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/ms-icon-150x150.png" afterPath="$PROJECT_DIR$/public/img/icon/ms-icon-150x150.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_09_224255_create_empresas_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_09_224255_create_empresas_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/EmpresaRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/EmpresaRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/eventos.sql" afterPath="$PROJECT_DIR$/database/eventos.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_combine.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_combine.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/chart-morris.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/chart-morris.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-114x114.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-114x114.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_16_231246_create_v_profissional_area_solicitacaos_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_16_231246_create_v_profissional_area_solicitacaos_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/MacroServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/MacroServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/usuario/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/usuario/edit.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Arquivo Comprimido.zip" afterPath="$PROJECT_DIR$/Arquivo Comprimido.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_tabletools.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_tabletools.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/CampoCondicoes.php" afterPath="$PROJECT_DIR$/app/CampoCondicoes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_19_165819_create_v_profissionals_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_19_165819_create_v_profissionals_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_without_sidebar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_without_sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/session.php" afterPath="$PROJECT_DIR$/config/session.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/footer/icon-phone.png" afterPath="$PROJECT_DIR$/public/img/footer/icon-phone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_fixed_columns.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_fixed_columns.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/RoleTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/RoleTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/CupomDescontos.php" afterPath="$PROJECT_DIR$/app/CupomDescontos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/wizard.jpg" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/img/wizard.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-152x152.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-152x152.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/v_profissionals.sql" afterPath="$PROJECT_DIR$/database/v_profissionals.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/pt-BR/auth.php" afterPath="$PROJECT_DIR$/resources/lang/pt-BR/auth.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/android-icon-48x48.png" afterPath="$PROJECT_DIR$/public/img/icon/android-icon-48x48.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mail.php" afterPath="$PROJECT_DIR$/config/mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/.gitkeep" afterPath="$PROJECT_DIR$/database/migrations/.gitkeep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_slider_switcher.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_slider_switcher.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/extra_coming_soon.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/extra_coming_soon.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Events/Event.php" afterPath="$PROJECT_DIR$/app/Events/Event.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/backgrounds/56.png" afterPath="$PROJECT_DIR$/public/img/backgrounds/56.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_responsive.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_responsive.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_07_26_153616_alter_profissionals.php" afterPath="$PROJECT_DIR$/database/migrations/2015_07_26_153616_alter_profissionals.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-76x76.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-76x76.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckRole.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckRole.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/test.sql" afterPath="$PROJECT_DIR$/app/test.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/jquery-1.10.2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/footer/acroy-footer-logo.png" afterPath="$PROJECT_DIR$/public/img/footer/acroy-footer-logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/cache.php" afterPath="$PROJECT_DIR$/config/cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/ms-icon-70x70.png" afterPath="$PROJECT_DIR$/public/img/icon/ms-icon-70x70.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/CampoAlternativas.php" afterPath="$PROJECT_DIR$/app/CampoAlternativas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_widget_boxes.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_widget_boxes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_12_082802_create_v_faixa_salarial_profissionals_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_12_082802_create_v_faixa_salarial_profissionals_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/wizard.js" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/wizard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/android-icon-36x36.png" afterPath="$PROJECT_DIR$/public/img/icon/android-icon-36x36.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_09_211955_create_roles_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_09_211955_create_roles_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_19_074147_alter_empresa_ativo.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_19_074147_alter_empresa_ativo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_12_093746_alter_users_last_login.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_12_093746_alter_users_last_login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/CampoTipos.php" afterPath="$PROJECT_DIR$/app/CampoTipos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Commands/Command.php" afterPath="$PROJECT_DIR$/app/Commands/Command.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/app.php" afterPath="$PROJECT_DIR$/bootstrap/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_media_object.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_media_object.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/index_v2.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/index_v2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/wizard-list-place.html" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/wizard-list-place.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_colreorder.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_colreorder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1.zip" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_plugins.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_plugins.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/manifest.json" afterPath="$PROJECT_DIR$/public/img/icon/manifest.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/ui_simple_line_icons.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/ui_simple_line_icons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.old.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.old.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/login_v3.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/login_v3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/login_v2.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/login_v2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/apple-icon-72x72.png" afterPath="$PROJECT_DIR$/public/img/icon/apple-icon-72x72.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_wysiwyg.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_wysiwyg.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/ChartsServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/ChartsServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/extra_404_error.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/extra_404_error.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/password.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/password.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/CampoCondicoesRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/CampoCondicoesRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/pt-BR/pagination.php" afterPath="$PROJECT_DIR$/resources/lang/pt-BR/pagination.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/evento.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/evento.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/page_with_right_sidebar.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/page_with_right_sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" afterPath="$PROJECT_DIR$/resources/lang/en/passwords.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_12_082744_create_v_faixa_etaria_profissionals_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_12_082744_create_v_faixa_etaria_profissionals_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/logos/58.png" afterPath="$PROJECT_DIR$/public/img/logos/58.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/pt-BR/passwords.php" afterPath="$PROJECT_DIR$/resources/lang/pt-BR/passwords.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/Registrar.php" afterPath="$PROJECT_DIR$/app/Services/Registrar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_16_221601_create_profissional_solicitacaos_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_16_221601_create_profissional_solicitacaos_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/android-icon-72x72.png" afterPath="$PROJECT_DIR$/public/img/icon/android-icon-72x72.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/Request.php" afterPath="$PROJECT_DIR$/app/Http/Requests/Request.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/BusServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/BusServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icon/ms-icon-310x310.png" afterPath="$PROJECT_DIR$/public/img/icon/ms-icon-310x310.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/municipio_insert.sql" afterPath="$PROJECT_DIR$/database/municipio_insert.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.php" afterPath="$PROJECT_DIR$/server.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/ExampleTest.php" afterPath="$PROJECT_DIR$/tests/ExampleTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_validation.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_validation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/area/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/area/create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/form_wizards_validation.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/form_wizards_validation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard/table_manage_autofill.html" afterPath="$PROJECT_DIR$/resources/views/dashboard/table_manage_autofill.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/area/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/area/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/wizard-list-boat.html" afterPath="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/wizard-list-boat.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_19_074040_create_v_empresa_solicitacaos_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_19_074040_create_v_empresa_solicitacaos_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/TestCase.php" afterPath="$PROJECT_DIR$/tests/TestCase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/reset.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/reset.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_09_215115_alter_users_roles.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_09_215115_alter_users_roles.php" />
     </list>
     <ignored path="talentos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -336,8 +336,8 @@
       <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="282" column="0" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.583333">
+              <caret line="335" column="10" selection-start-line="335" selection-start-column="10" selection-end-line="335" selection-end-column="10" />
               <folding>
                 <element signature="e#44#90#0#PHP" expanded="true" />
               </folding>
@@ -345,43 +345,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/site/site.blade.php">
+      <file leaf-file-name="ParticipanteCampoAlternativas.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/ParticipanteCampoAlternativas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="62" selection-end-column="15" />
+            <state vertical-scroll-proportion="-7.5">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <file leaf-file-name="Contatos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Contatos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
-              <folding>
-                <element signature="e#7#392#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cnpj.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/site/cnpj.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cpf.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/site/cpf.blade.php">
+      <file leaf-file-name="ParticipanteCampos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/ParticipanteCampos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -390,29 +378,55 @@
       <file leaf-file-name="inscricao.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/site/inscricao.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36731106">
-              <caret line="387" column="31" selection-start-line="387" selection-start-column="31" selection-end-line="387" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gsdk-base.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/css/gsdk-base.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="evento.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/site/evento.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="98" column="20" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
-              <folding />
+            <state vertical-scroll-proportion="0.2296719">
+              <caret line="205" column="74" selection-start-line="205" selection-start-column="74" selection-end-line="205" selection-end-column="74" />
+              <folding>
+                <marker date="1458643391000" expanded="true" signature="6703:6771" placeholder="{...}" />
+                <marker date="1458643391000" expanded="true" signature="21469:28360" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="22227:22660" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="22248:22659" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="23185:23276" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="23344:23410" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="23528:25069" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="23539:25068" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="23713:24608" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="23734:24607" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="24660:24750" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="24836:25064" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="24878:25058" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="25223:25631" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="25273:25630" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="25577:25620" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="25928:26182" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="25978:26181" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="26187:26461" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="26236:26460" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="26390:26450" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="26500:28355" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="26520:26895" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="26955:26989" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="27141:27628" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="27168:27583" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="27747:28349" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="27762:28348" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="27996:28226" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="28383:28771" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="28405:28770" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="28479:28763" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="28491:28762" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="28698:28752" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="28794:29252" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="29110:29171" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="29125:29170" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="29180:29244" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="29191:29243" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="29291:29989" placeholder="{...}" />
+                <marker date="1458643391000" expanded="true" signature="29313:29981" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="29334:29980" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="29601:29969" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="29612:29968" placeholder="..." />
+                <marker date="1458643391000" expanded="true" signature="29776:29954" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -438,7 +452,6 @@
         <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/site/index.blade.php" />
         <option value="$PROJECT_DIR$/app/EventoPerfilGrupos.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/EventoController.php" />
         <option value="$PROJECT_DIR$/public/assets/js/custom.js" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/public/js/jquery.mask..js" />
@@ -453,22 +466,30 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/jquery.validate.min.js" />
-        <option value="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/wizard.js" />
-        <option value="$PROJECT_DIR$/database/eventos.sql" />
         <option value="$PROJECT_DIR$/database/municipio_insert.sql" />
         <option value="$PROJECT_DIR$/database/campos_modelos.sql" />
         <option value="$PROJECT_DIR$/vendor/jansenfelipe/cnpj-gratis/src/CnpjGratis.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/resources/views/site/cnpj.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/site/evento.blade.php" />
-        <option value="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/css/gsdk-base.css" />
         <option value="$PROJECT_DIR$/resources/views/site/cpf.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/resources/views/site/site.blade.php" />
         <option value="$PROJECT_DIR$/.env.example" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/EventoController.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/site.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/pagina-interna.css" />
+        <option value="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/css/gsdk-base.css" />
+        <option value="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/jquery.bootstrap.wizard.js" />
+        <option value="$PROJECT_DIR$/resources/views/site/evento.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/wizard.js" />
+        <option value="$PROJECT_DIR$/database/eventos.sql" />
+        <option value="$PROJECT_DIR$/database/participante.sql" />
+        <option value="$PROJECT_DIR$/app/Participantes.php" />
+        <option value="$PROJECT_DIR$/app/ParticipanteCampoAlternativas.php" />
+        <option value="$PROJECT_DIR$/app/ParticipanteCampos.php" />
+        <option value="$PROJECT_DIR$/app/ParticipanteStatus.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/site/inscricao.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
       </list>
     </option>
   </component>
@@ -487,9 +508,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="width" value="1362" />
-    <option name="height" value="743" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -516,6 +536,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -530,7 +552,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="teste" />
+              <option name="myItemId" value="eventos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -540,18 +562,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="teste" />
+              <option name="myItemId" value="eventos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="talentos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -565,6 +603,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources/views/site" />
     </key>
@@ -575,10 +614,6 @@
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -613,24 +648,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1362" height="743" extended-state="7" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24429224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22109374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="100" width="1080" height="600" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="100" width="1080" height="600" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -669,89 +704,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="282" column="0" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
-          <folding>
-            <element signature="e#44#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/site.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="62" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/cnpj.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/cpf.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/inscricao.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/css/gsdk-base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/evento.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="20" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/CampoCondicoes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Contatos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -800,13 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="706" column="43" selection-start-line="706" selection-start-column="43" selection-end-line="706" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/test.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3295129">
@@ -839,20 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="368" column="26" selection-start-line="368" selection-start-column="26" selection-end-line="368" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Campos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36376604">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -898,24 +830,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/wizard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.6296296">
-          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/jquery.validate.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="99" column="34" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/eventos.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35916543">
-          <caret line="636" column="12" selection-start-line="636" selection-start-column="0" selection-end-line="636" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -947,66 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/evento.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="20" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/css/gsdk-base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/cnpj.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/cpf.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="282" column="0" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
-          <folding>
-            <element signature="e#44#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/site.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="62" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.57644993">
@@ -1018,7 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2529511">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,11 +886,235 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/cpf.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/cnpj.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17118402">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/pagina-interna.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/site.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1126962">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/jquery.bootstrap.wizard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-108.888885">
+          <caret line="206" column="35" selection-start-line="206" selection-start-column="35" selection-end-line="206" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/js/wizard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/x-bootstrap-wizard-v1.1/assets/css/gsdk-base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51355207">
+          <caret line="190" column="20" selection-start-line="190" selection-start-column="20" selection-end-line="190" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29957205">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/participante.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9552906">
+          <caret line="169" column="16" selection-start-line="169" selection-start-column="16" selection-end-line="169" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Campos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32097003">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/CampoCondicoes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ParticipanteStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29957205">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/eventos.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80625933">
+          <caret line="530" column="0" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Participantes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5294118">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8333335">
+          <caret line="1686" column="20" selection-start-line="1686" selection-start-column="20" selection-end-line="1686" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8031383">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/evento.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.8887303">
+          <caret line="393" column="0" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.583333">
+          <caret line="335" column="10" selection-start-line="335" selection-start-column="10" selection-end-line="335" selection-end-column="10" />
+          <folding>
+            <element signature="e#44#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ParticipanteCampoAlternativas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Contatos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ParticipanteCampos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/site/inscricao.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36731106">
-          <caret line="387" column="31" selection-start-line="387" selection-start-column="31" selection-end-line="387" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="0.2296719">
+          <caret line="205" column="74" selection-start-line="205" selection-start-column="74" selection-end-line="205" selection-end-column="74" />
+          <folding>
+            <marker date="1458643391000" expanded="true" signature="6703:6771" placeholder="{...}" />
+            <marker date="1458643391000" expanded="true" signature="21469:28360" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="22227:22660" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="22248:22659" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="23185:23276" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="23344:23410" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="23528:25069" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="23539:25068" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="23713:24608" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="23734:24607" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="24660:24750" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="24836:25064" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="24878:25058" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="25223:25631" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="25273:25630" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="25577:25620" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="25928:26182" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="25978:26181" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="26187:26461" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="26236:26460" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="26390:26450" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="26500:28355" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="26520:26895" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="26955:26989" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="27141:27628" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="27168:27583" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="27747:28349" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="27762:28348" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="27996:28226" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="28383:28771" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="28405:28770" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="28479:28763" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="28491:28762" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="28698:28752" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="28794:29252" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="29110:29171" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="29125:29170" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="29180:29244" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="29191:29243" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="29291:29989" placeholder="{...}" />
+            <marker date="1458643391000" expanded="true" signature="29313:29981" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="29334:29980" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="29601:29969" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="29612:29968" placeholder="..." />
+            <marker date="1458643391000" expanded="true" signature="29776:29954" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

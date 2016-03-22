@@ -123,6 +123,7 @@ var bootstrapWizardCreate = function(element, options) {
 		return $navigation.find(baseItemSelector).index(e);
 	};
 	this.nextIndex = function() {
+		console.log($activeTab);
 		return $navigation.find(baseItemSelector).index($activeTab) + 1;
 	};
 	this.previousIndex = function() {
