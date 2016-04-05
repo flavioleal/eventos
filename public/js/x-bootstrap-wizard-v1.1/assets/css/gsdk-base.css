@@ -558,8 +558,11 @@ label{
     padding: 20px 10px;
 }
 
-.wizard-card .wizard-footer{
-    padding: 0 10px;
+.wizard-card .wizard-footer {
+    padding: 15px 0;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .wizard-card .disabled{

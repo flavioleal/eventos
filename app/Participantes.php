@@ -16,6 +16,7 @@ class Participantes extends Model
         'data_conclusao',
         'data_checkin',
         'participante_status_id',
+		'chave'
 	];
 
 	public function campos(){
@@ -24,6 +25,22 @@ class Participantes extends Model
 
 	public function campoAlternativas(){
 		return $this->hasMany('Talentos\ParticipanteCampoAlternativas','participante_id');
+	}
+
+	public static function slugFromContact($contato_id)
+	{
+		$evento = Eventos::select('eventos.slug')
+			->join('EventoPerfis as ep', function($join) {
+				$join->on('ep.evento_id', '=', 'eventos.id');
+			})
+			->join('Participantes as p', function($join) {
+				$join->on('p.evento_perfil_id', '=', 'ep.id');
+			})
+			->where('p.contato_id', $contato_id)
+			->get()
+			->first();
+
+		return $evento->slug;
 	}
 
     protected static function boot() {
@@ -40,4 +57,9 @@ class Participantes extends Model
             }
         );
     }
+
+	public function generateKey()
+	{
+		return strtoupper(md5($this->id));
+	}
 }

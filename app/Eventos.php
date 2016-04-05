@@ -48,4 +48,29 @@ class Eventos extends Model {
 	public function solicitacoesProfissional(){
 		return $this->hasMany('Talentos\ProfissionalSolicitacao','profissional_id');
 	}*/
+
+	public function getDataInicio()
+	{
+		return $this->dateFromString($this->data_inicio);
+	}
+
+	public function getDateFim()
+	{
+		return $this->dateFromString($this->data_fim);
+	}
+
+	private function dateFromString($string, $format = 'd/m/Y H:i:s')
+	{
+		$dateFormat = false;
+		if (!empty($string)) {
+			$date = \DateTime::createFromFormat('Y-m-d H:i:s',  $string);
+
+			if (!$date instanceof \DateTimeInterface) {
+				return false;
+			}
+			$dateFormat = $date->format($format);
+		}
+
+		return $dateFormat;
+	}
 }

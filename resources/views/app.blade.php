@@ -42,6 +42,8 @@
     <link href="/assets/plugins/dropzone/dropzone.css" rel="stylesheet" />
     <link href="/assets/plugins/switchery/switchery.min.css" rel="stylesheet" />
 
+	<link href="/assets/plugins/DataTables/css/data-table.css" rel="stylesheet" />
+
 	<!-- ================== END PAGE LEVEL STYLE ================== -->
 	
 	<!-- ================== BEGIN BASE JS ================== -->
@@ -83,65 +85,29 @@
 					<li class="dropdown">
 						<a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle f-s-14">
 							<i class="fa fa-bell-o"></i>
-							<span class="label">5</span>
+							<span class="label hide">5</span>
 						</a>
 						<ul class="dropdown-menu media-list pull-right animated fadeInDown">
-                            <li class="dropdown-header">Notifications (5)</li>
+                            <li class="dropdown-header">Notificação <span class="hide">(5)</span></li>
                             <li class="media">
                                 <a href="javascript:;">
-                                    <div class="media-left"><i class="fa fa-bug media-object bg-red"></i></div>
+                                    <div class="media-left"><i class="fa fa-info media-object bg-red"></i></div>
                                     <div class="media-body">
-                                        <h6 class="media-heading">Server Error Reports</h6>
-                                        <div class="text-muted f-s-11">3 minutes ago</div>
+                                        <h6 class="media-heading">Nenhuma existem notificações</h6>
+                                        <div class="text-muted f-s-11">Verificado há 1 minuto atrás</div>
                                     </div>
                                 </a>
                             </li>
-                            <li class="media">
-                                <a href="javascript:;">
-                                    <div class="media-left"><img src="/assets/img/user-1.jpg" class="media-object" alt="" /></div>
-                                    <div class="media-body">
-                                        <h6 class="media-heading">John Smith</h6>
-                                        <p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
-                                        <div class="text-muted f-s-11">25 minutes ago</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="media">
-                                <a href="javascript:;">
-                                    <div class="media-left"><img src="/assets/img/user-2.jpg" class="media-object" alt="" /></div>
-                                    <div class="media-body">
-                                        <h6 class="media-heading">Olivia</h6>
-                                        <p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
-                                        <div class="text-muted f-s-11">35 minutes ago</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="media">
-                                <a href="javascript:;">
-                                    <div class="media-left"><i class="fa fa-plus media-object bg-green"></i></div>
-                                    <div class="media-body">
-                                        <h6 class="media-heading"> New User Registered</h6>
-                                        <div class="text-muted f-s-11">1 hour ago</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="media">
-                                <a href="javascript:;">
-                                    <div class="media-left"><i class="fa fa-envelope media-object bg-blue"></i></div>
-                                    <div class="media-body">
-                                        <h6 class="media-heading"> New Email From John</h6>
-                                        <div class="text-muted f-s-11">2 hour ago</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="dropdown-footer text-center">
+
+                            <li class="hide dropdown-footer text-center">
                                 <a href="javascript:;">View more</a>
                             </li>
 						</ul>
 					</li>
 					<li class="dropdown navbar-user">
-						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-							<img src="/assets/img/user-13.jpg" alt="" /> 
+						<a style="padding: 6px 20px;" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+							<!--<img src="/assets/img/user-13.jpg" alt="" />-->
+							<i style="background: #eee; padding: 12px; border-radius: 32px; font-size: 16px;" class="glyphicon glyphicon-user"></i>
 							<span class="hidden-xs">{{ Auth::user()->name }}</span> <b class="caret"></b>
 						</a>
 						<ul class="dropdown-menu animated fadeInLeft">
@@ -188,7 +154,7 @@
 							<span>Eventos</span>
 						</a>
 						<ul class="sub-menu">
-						    <li><a href="{{ route('admin.evento') }}">Lista de Eventos</a></li>
+						    <li><a href="{{ route('evento.showAll') }}">Lista de Eventos</a></li>
 						    <li><a href="{{ route('admin.evento') }}">Novo Evento</a></li>
 						</ul>
 					</li>
@@ -201,7 +167,7 @@
 							<span>Participantes</span>
 						</a>
 						<ul class="sub-menu">
-						    <li><a href="{{ route('admin.participante') }}">Lista de Participantes</a></li>
+						    <li><a href="{{ route('attendee.showAll') }}">Lista de Participantes</a></li>
 						    <li><a href="{{ route('admin.participante') }}">Novo Participante</a></li>
 						</ul>
 					</li>
@@ -296,9 +262,7 @@
 	<!--<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
 
 
-	
 	<script>
-
 		var marker,map, infowindow;
 		function initMap() {
 
@@ -417,8 +381,8 @@
 
 		  infowindow.open(map, marker);
 		}
-
 	</script>
+
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyAsJG9VU0Mc4M_J3xFTrNzHx5Yt3gedl9I&libraries=places&callback=initMap"></script>
 	<script src="/assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
 	<script src="/assets/plugins/jquery-jvectormap/jquery-jvectormap-world-mill-en.js"></script>
@@ -428,14 +392,28 @@
 	<script src="/assets/plugins/switchery/switchery.min.js"></script>
 	<script src="/assets/js/form-slider-switcher.demo.min.js"></script>
 	<script src="/assets/js/form.js"></script>
+
 	<script src="/assets/js/dashboard.min.js"></script>
 
+	<script src="/assets/plugins/select2/dist/js/select2.min.js"></script>
 	<script src="/assets/js/apps.min.js"></script>
 
 	<script src="/assets/js/custom.js"></script>
 	<script src="/assets/js/configurar-perfil.js"></script>
 	<script src="/assets/js/gerenciar-campos.js"></script>
-	<!-- ================== END PAGE LEVEL JS ================== -->
+
+	@if (Route::current()->getName() == 'evento.showAll')
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<link href="/js/jquery-bootgrid/jquery.bootgrid.css" rel="stylesheet" />
+	<script src="/js/jquery-bootgrid/jquery.bootgrid.js"></script>
+	<script src="/js/jquery-bootgrid/jquery.bootgrid.fa.js"></script>
+
+	<script>
+		$(document).ready(function() {
+
+		});
+	</script>
+	@endif
 	
 	<script type="text/javascript">
 		var PAGINAATUAL = '{{ Request::url() }}',
@@ -453,13 +431,54 @@
 			        'X-CSRF-TOKEN':'{!! csrf_token() !!}'
 			    }
 			});
-			
+
+			@if (Route::current()->getName() == 'evento.showAll')
+			$(".bootgrid").bootgrid().on("loaded.rs.jquery.bootgrid", function (e) {
+				$('.bootgrid tbody tr').each(function(){
+					var id = $(this).find('td:first').text();
+					//editar
+					$(this).find('td:last').append(
+						$('<a></a>')
+							.attr({
+								'href': ENDERECO + '/admin/evento/' + id
+							})
+							.css({
+								'margin-right': '10px'
+							})
+							.addClass('btn btn-default btn-sm')
+							.html(
+								$('<i></i>').addClass('fa fa-cog')
+							).tooltip({
+								'title': 'Editar evento'
+							})
+					);
+					//excluir
+					$(this).find('td:last').append(
+						$('<a></a>')
+							.attr({
+								'href': ENDERECO + '/admin/evento/destroy/' + id
+							})
+							.addClass('btn btn-default btn-sm')
+							.html(
+									$('<i></i>').addClass('glyphicon glyphicon-trash')
+							).tooltip({
+								'title': 'Excluir evento'
+							}).on('click', function(){
+								if (!confirm('Tem certeza que deseja excluir o evento')) {
+									return false;
+								}
+							})
+					);
+				});
+			});
+			@endif
 			App.init();
 			Dashboard.init();
 
 			FormWizardValidation.init();
 			FormPlugins.init();
 			FormSliderSwitcher.init();
+
 		});
 
 

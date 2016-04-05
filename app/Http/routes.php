@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -26,12 +25,34 @@ Route::get(
 		'uses'=>'HomeController@evento'
 	]
 );
-
 Route::get(
-	'inscricao/{id}',
+	'inscricao/{slug}',
 	[
 		'as'=>'site.inscricao',
 		'uses'=>'HomeController@inscricao'
+	]
+);
+Route::any(
+	'acesso/{slug?}',
+	[
+		'as'=>'site.access',
+		'uses'=>'HomeController@access'
+	]
+);
+
+Route::get(
+	'participante/{slug?}',
+	[
+		'as'=>'site.participant',
+		'uses'=>'HomeController@participant'
+	]
+);
+
+Route::get(
+	'participante/logout/{slug?}',
+	[
+		'as'=>'participant.logout',
+		'uses'=>'HomeController@logoutParticipant'
 	]
 );
 
@@ -376,6 +397,46 @@ Route::post(
 	[
 		'as'=>'evento.ordenar_campo_alternativas',
 		'uses'=>'EventoController@ordenar_campo_alternativas',
+		'middleware' => ['auth', 'roles'],
+		'roles' => ['Master','Administrador','Gerência']
+	]
+);
+
+Route::get(
+	'admin/lista-de-participantes',
+	[
+		'as'=>'attendee.showAll',
+		'uses'=>'Admin\AttendeeController@showAll',
+		'middleware' => ['auth', 'roles'],
+		'roles' => ['Master','Administrador','Gerência']
+	]
+);
+
+Route::get(
+	'admin/dashboard',
+	[
+		'as'=>'admin.dashboard',
+		'uses'=>'Admin\DashboardController@index',
+		'middleware' => ['auth', 'roles'],
+		'roles' => ['Master','Administrador','Gerência']
+	]
+);
+
+Route::get(
+	'admin/home',
+	[
+		'as'=>'admin.dashboard',
+		'uses'=>'Admin\DashboardController@index',
+		'middleware' => ['auth', 'roles'],
+		'roles' => ['Master','Administrador','Gerência']
+	]
+);
+
+Route::any(
+	'admin/lista-de-eventos',
+	[
+		'as'=>'evento.showAll',
+		'uses'=>'EventoController@showAll',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]

@@ -1,7 +1,5 @@
 @extends('app')
-
 @section('content')
-
 <style type="text/css" scoped>
     .gllpMap    { width: 100%; height: 270px; }
 
@@ -368,7 +366,6 @@
                                                 <option value="109">Viagens e Outdoor</option>
                                             </select>
                                         </div>
-
                                         <div class="form-group block1 col-md-12">
                                             <label>Descrição</label>
                                             <textarea name="descricao" class="wysiwyg form-control wys">

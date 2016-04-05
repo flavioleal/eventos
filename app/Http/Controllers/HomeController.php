@@ -1,6 +1,15 @@
 <?php namespace Talentos\Http\Controllers;
 
+use Illuminate\Support\Facades\Session;
+use Talentos\CampoAlternativas;
+use Talentos\Role;
+use Talentos\User;
+use View;
 use Symfony\Component\HttpFoundation\Response;
+use Talentos\Campos;
+use Talentos\CampoTipos;
+use Talentos\EventoPerfilGrupos;
+use Talentos\EventoPerfis;
 use Talentos\Http\Requests;
 use Illuminate\Http\Request;
 use Talentos\Eventos;
@@ -15,6 +24,8 @@ use Talentos\Participantes;
 use Talentos\ParticipanteCampos;
 use Talentos\ParticipanteCampoAlternativas;
 
+use Auth;
+
 class HomeController extends Controller
 {
 	/**
@@ -27,19 +38,19 @@ class HomeController extends Controller
 		return view('site.index');
 	}
 
-	public function inscricao(Request $request, $id)
+	public function inscricao(Request $request, $slug)
 	{
-		$perfis = $this->getEventoById($id);
-		$grupos = $this->getGruposByEventoId($id);
-		$campos = $this->getCamposByEventoId($id);
-		$alternativas = $this->getAlternativasByEventoId($id);
-        $condicoes = $this->getCondicoesByEventoId($id);
-
+		$evento = $this->getEventoBySlug($slug)[0];
+		$perfis = $this->getEventoById($evento->id);
+		$grupos = $this->getGruposByEventoId($evento->id);
+		$campos = $this->getCamposByEventoId($evento->id);
+		$alternativas = $this->getAlternativasByEventoId($evento->id);
+        $condicoes = $this->getCondicoesByEventoId($evento->id);
 		$tamanho = [1 => 'col-md-12', 2 => 'col-md-6', 3 => 'col-md-4'];
 
 		return view('site.inscricao',
 			[
-                'evento' => $id,
+                'evento' => $evento,
 				'perfis' => $perfis,
 				'campos' => $campos,
                 'condicoes' => $condicoes,
@@ -54,7 +65,7 @@ class HomeController extends Controller
 	public function evento(Request $request, $slug)
 	{
 		$evento = $this->getEventoBySlug($slug);
-		return view('site.evento')->with('evento', $evento[0]);
+		return view('site.home')->with('evento', $evento[0]);
 	}
 
 	private function getCondicoesByEventoId($id)
@@ -197,6 +208,7 @@ class HomeController extends Controller
 			"eventos.logo_arquivo_id",
 			"eventos.banner_arquivo_id",
 			"eventos.background_arquivo_id",
+			"eventos.slug",
 			'cor_texto',
 			'cor_predominante',
 			'cor_fundo',
@@ -318,56 +330,402 @@ class HomeController extends Controller
 
     public function store(Request $request)
     {
-        $input = $request->all();
+		$input = $request->all();
+		$participante = $this->storeFields($input);
 
-        $contato = Contatos::create(
-            ['nome' => $_SERVER['REMOTE_ADDR']]
-        );
+		$finish = false;
+		if ($request->get('finish') && $this->validateForm($participante)) {
+			$finish = $this->finish($participante);
+		}
 
-        if (empty($contato->id)) {
-            return Response::json( ['status' => 0, 'message' => 'Failure to insert contact'] );
-        }
-
-        $participante = Participantes::create(
-            [
-                'contato_id' => $contato->id,
-                'evento_perfil_id' => $input['field-perfil']
-            ]
-        );
-
-        if (empty($participante->id)) {
-            return Response::json( ['status' => 0, 'message' => 'Failure to insert participant'] );
-        }
-
-        foreach ($input['field'] as $campo => $valor) {
-            $campo_id = explode('-', $campo);
-            $campo = ParticipanteCampos::create(
-                [
-                    'campo_id' => $campo_id[1],
-                    'participante_id' => $participante->id,
-                    'valor' => is_array($valor) ? null : $valor
-                ]
-            );
-
-            if (is_array($valor) && !empty($campo->id)) {
-
-                foreach ($valor as $k => $v) {
-                    ParticipanteCampoAlternativas::create(
-                        [
-                            'participante_campo_id' => $campo->id,
-                            'campo_alternativa_id' => $k
-                    ]
-                    );
-                }
-            }
-
-        }
-
-        $response = [
-            'status'	=> '1'
-        ];
-
-        return Response::json( $response );
+		return json_encode([
+            'status' => 1,
+            'mensagem' => '',
+			'participante_id' => $participante->id,
+			'finish' => $finish
+        ]);
     }
 
+	public function participant(Request $request, $slug)
+	{
+		if (!(Auth::check() && Auth::user()->role_id === Role::getIdByName(Role::PARTICIPANTE))) {
+			return redirect(route('site.access', ['slug' => $slug]));
+		}
+
+		$participante = Participantes::where('contato_id', Auth::user()->contato_id)->get()->first();
+
+		$evento = $this->getEventoBySlug($slug)[0];
+		$perfis = $this->getEventoById($evento->id);
+		$grupos = $this->getGruposByEventoId($evento->id);
+		$campos = $this->getRespostasByEventoId($evento->id, $participante->id);
+		$alternativas = $this->getAlternativasRespostasByEventoId($evento->id, $participante->id);
+		$condicoes = $this->getCondicoesByEventoId($evento->id);
+		$tamanho = [1 => 'col-md-12', 2 => 'col-md-6', 3 => 'col-md-4'];
+
+		return view('site.participant',
+			[
+				'confirmacao' => $this->comprovante($participante),
+				'participante' => $participante,
+				'evento' => $evento,
+				'perfis' => $perfis,
+				'campos' => $campos,
+				'condicoes' => $condicoes,
+				'grupos' => $grupos,
+				'alternativas' => $alternativas,
+				'tamanho' => $tamanho,
+				'temp' => []
+			]
+		);
+	}
+
+	private function getRespostasByEventoId($eventoId, $participanteId)
+	{
+		return Eventos::select(
+			"campos.id",
+			"campos.evento_perfil_id",
+			"campos.evento_perfil_grupo_id",
+			"campos.campo_tipo_id",
+			"campos.campo",
+			"campos.descricao",
+			"campos.obrigatorio",
+			"campos.duplicado",
+			"campos.descricao",
+			"campos.classe",
+			"campos.tamanho",
+			"campos.autocomplete",
+			"campos.mascara",
+			"pc.valor as resposta"
+		)
+			->join('evento_perfis', function($join) {
+				$join->on('evento_perfis.evento_id', '=', 'eventos.id');
+			})
+			->join('campos', function($join) {
+				$join->on('campos.evento_perfil_id', '=', 'evento_perfis.id');
+			})
+			->leftJoin('participantes as p', function($join) use($participanteId) {
+				$join->on('p.evento_perfil_id', '=', 'evento_perfis.id')
+					//->on(DB::raw('p.id = 58'));
+					->on('p.id', '=', DB::raw($participanteId));
+			})
+			->leftJoin('participante_campos as pc', function($join) {
+				$join->on('pc.campo_id', '=', 'campos.id')
+					->on('pc.participante_id', '=', 'p.id');
+			})
+			->orderBy('campos.ordem')
+			->where('eventos.id', '=', $eventoId)
+			->get();
+	}
+
+	private function getAlternativasRespostasByEventoId($eventoId, $participanteId)
+	{
+		return Eventos::select(
+			"campo_alternativas.id",
+			"campo_alternativas.campo_id",
+			"campo_alternativas.alternativa",
+			"pca.campo_alternativa_id as checked"
+		)
+			->join('evento_perfis', function($join) {
+				$join->on('evento_perfis.evento_id', '=', 'eventos.id');
+			})
+			->join('campos', function($join) {
+				$join->on('campos.evento_perfil_id', '=', 'evento_perfis.id');
+			})
+			->join('campo_alternativas', function($join) {
+				$join->on('campo_alternativas.campo_id', '=', 'campos.id');
+			})
+			->leftJoin('participantes as p', function($join) use($participanteId) {
+				$join->on('p.evento_perfil_id', '=', 'evento_perfis.id')
+					->on('p.id', '=', DB::raw($participanteId));
+			})
+			->leftJoin('participante_campos as pc', function($join) {
+				$join->on('pc.campo_id', '=', 'campos.id')
+					->on('pc.participante_id', '=', 'p.id');
+			})
+			->leftJoin('participante_campo_alternativas as pca', function($join) {
+				$join->on('pca.participante_campo_id', '=', 'pc.id')
+					->on('pca.campo_alternativa_id', '=', 'campo_alternativas.id');
+			})
+			->orderBy('campo_alternativas.ordem')
+			->where('eventos.id', '=', $eventoId)
+			->get();
+	}
+
+	public function access(Request $request, $slug)
+	{
+		if (!empty($request->get('username')) && !empty($request->get('password'))) {
+			if (Auth::attempt([
+				'email' => $request->get('username'),
+				'password' => $request->get('password'),
+				'role_id' => Role::getIdByName(Role::PARTICIPANTE),
+				'ativo' => 1
+			])) {
+				return redirect(route('site.participant', ['slug' => $slug]));
+			} else {
+				Auth::logout();
+				Session::flash('erro',"Login ou chave inválido(s). Tente novamente.");
+				return redirect(route('site.access', ['slug' => $slug]));
+			}
+		}
+		$evento = $this->getEventoBySlug($slug)[0];
+
+		return view('site.access', [
+			'evento' => $evento
+		]);
+	}
+
+	private function finish(Participantes $participante)
+	{
+
+		if (empty($participante->data_conclusao)) {
+			$dataConclusao = new \DateTime();
+			$participante->data_conclusao = $dataConclusao->format('Y-m-d H:i:s');
+			$participante->chave = $participante->generateKey();
+			Participantes::find($participante->id)
+				->update([
+					'data_conclusao' => $participante->data_conclusao,
+					'chave' => $participante->chave
+				]);
+			$contato = Contatos::find($participante->contato_id);
+
+			User::create([
+				'name' => $contato->nome,
+				'contato_id' => $contato->id,
+				'email' => 'usuario' . $contato->id,
+				'password' => bcrypt($participante->chave),
+				'ativo' => 1,
+				'role_id' => Role::getIdByName(Role::PARTICIPANTE)
+			]);
+		}
+		//send email code
+		return $this->comprovante($participante);
+	}
+
+	private function comprovante(Participantes $participante)
+	{
+		$evento = Eventos::select(
+				'eventos.*',
+				'logo.extensao as logo_extensao'
+			)
+			->where('ep.id', $participante->evento_perfil_id)
+			->join('evento_perfis as ep', function($join) {
+				$join->on('ep.evento_id', '=', 'eventos.id');
+			})
+			->leftJoin('arquivos as logo', function($join) {
+				$join->on('logo.id', '=', 'eventos.logo_arquivo_id');
+			})
+			->first();
+
+		$perfil = EventoPerfis::find($participante->evento_perfil_id);
+		$grupos = EventoPerfilGrupos::where('evento_perfil_grupos.evento_perfil_id', $perfil->id)
+			->whereExists(function($query) {
+				$query->select(DB::raw(1))
+					->from('campos as c')
+					->where('c.campo_tipo_id', '<>', CampoTipos::PARAGRAFO)
+					->whereRaw('c.evento_perfil_grupo_id = evento_perfil_grupos.id');
+			})->get()->toArray();
+
+		foreach ($grupos as &$grupo) {
+			$campos = ParticipanteCampos::select(
+					'participante_campos.id',
+					'participante_campos.valor',
+					'participante_campos.campo_id'
+				)
+				->join('campos as c', function($join) {
+					$join->on('c.id', '=', 'participante_campos.campo_id');
+				})
+				->where('c.evento_perfil_grupo_id', $grupo['id'])
+				->where('participante_id', $participante->id)
+				->get()
+				->toArray();
+
+			$grupo['campos'] = [];
+			foreach ($campos as $resposta) {
+				$campo = Campos::find($resposta['campo_id']);
+				$respostaValor = $resposta['valor'];
+
+				if ($campo->campo_tipo_id == CampoTipos::ALTERNATIVA) {
+					$alternativas = ParticipanteCampoAlternativas::select('ca.alternativa')
+						->join('campo_alternativas as ca', function($join) {
+							$join->on('ca.id', '=', 'participante_campo_alternativas.campo_alternativa_id');
+						})
+						->where('participante_campo_id', $resposta['id'])
+						->get()
+						->toArray();
+
+					foreach ($alternativas as &$a) {
+						$a = $a['alternativa'];
+					}
+					$respostaValor = implode(', ', $alternativas);
+				}
+
+				if ($campo->campo_tipo_id == CampoTipos::CAIXA_SELECAO) {
+					$alternativa = CampoAlternativas::select('campo_alternativas.alternativa')
+						->where('id', $resposta['valor'])
+						->get()
+						->first();
+
+					$respostaValor = $alternativa['alternativa'];
+				}
+				$grupo['campos'][] = [
+					'valor' => $campo->campo,
+					'resposta' => $respostaValor
+				];
+			}
+		}
+
+		$usuario = User::where('contato_id', $participante->contato_id)->get()->first();
+		$view = View::make('site.comprovante', [
+			'evento' => $evento,
+			'usuario' => $usuario,
+			'perfil' => $perfil,
+			'grupos' => $grupos,
+			'participante' => $participante
+		]);
+
+		return $view->render();
+	}
+
+	private function validateForm(Participantes $participante)
+	{
+		return true;
+	}
+
+	private function storeFields(array $input)
+	{
+		if (empty($input['id'])) {
+			$contato = Contatos::create(
+				['nome' => $_SERVER['REMOTE_ADDR']]
+			);
+
+			if (empty($contato->id)) {
+				return false;
+			}
+
+			$participante = Participantes::create(
+				[
+					'contato_id' => $contato->id,
+					'evento_perfil_id' => $input['field-perfil']
+				]
+			);
+
+			if (empty($participante->id)) {
+				return false;
+			}
+
+			if (!isset($input['field'])) {
+				return $participante;
+			}
+
+			foreach ($input['field'] as $campo => $valor) {
+				$campo_id = explode('-', $campo);
+				$campo = ParticipanteCampos::create(
+					[
+						'campo_id' => $campo_id[1],
+						'participante_id' => $participante->id,
+						'valor' => is_array($valor) ? null : $valor
+					]
+				);
+
+				if (is_array($valor) && !empty($campo->id)) {
+
+					foreach ($valor as $k => $v) {
+						ParticipanteCampoAlternativas::create(
+							[
+								'participante_campo_id' => $campo->id,
+								'campo_alternativa_id' => $k
+							]
+						);
+					}
+				}
+			}
+		} else {
+			$participante = Participantes::find($input['id']);
+
+			if (!isset($input['field'])) {
+				return $participante;
+			}
+
+			if ($participante->evento_perfil_id != $input['field-perfil']) {
+				$participante->evento_perfil_id = $input['field-perfil'];
+				Participantes::find($participante->id)
+					->update([
+						'evento_perfil_id' => $participante->evento_perfil_id
+					]);
+			}
+
+			$participanteCampos = [];
+			foreach ($input['field'] as $campo => $valor) {
+				$campo_id = explode('-', $campo);
+				$participanteCampo = ParticipanteCampos::where('participante_id', $participante->id)
+					->where('campo_id', $campo_id[1])->get()->toArray();
+
+				if (count($participanteCampo) > 0) {
+					ParticipanteCampos::where('participante_id', $participante->id)
+						->where('campo_id', $campo_id[1])
+						->update([
+							'campo_id' => $campo_id[1],
+							'participante_id' => $participante->id,
+							'valor' => is_array($valor) ? null : $valor
+						]);
+					$participanteCampo = $participanteCampo[0];
+				} else {
+					$participanteCampo = ParticipanteCampos::create(
+						[
+							'campo_id' => $campo_id[1],
+							'participante_id' => $participante->id,
+							'valor' => is_array($valor) ? null : $valor
+						]
+					)->toArray();
+				}
+
+				if (is_array($valor) && !empty($participanteCampo['id'])) {
+					foreach ($valor as $k => $v) {
+						$alternativa = ParticipanteCampoAlternativas::where(
+							'participante_campo_id', $participanteCampo['id']
+						)
+							->where('campo_alternativa_id', $k)
+							->get();
+
+						if ($alternativa->count() == 0) {
+							ParticipanteCampoAlternativas::create(
+								[
+									'participante_campo_id' => $participanteCampo['id'],
+									'campo_alternativa_id' => $k
+								]
+							);
+						}
+						$alternativas[] = $k;
+					}
+					ParticipanteCampoAlternativas::whereNotIn('campo_alternativa_id', $alternativas)
+						->where('participante_campo_id', $participanteCampo['id'])
+						->delete();
+				};
+				$participanteCampos[] = $participanteCampo['id'];
+			}
+			ParticipanteCampoAlternativas::whereExists(function($query) use ($input, $participante)
+			{
+				$query->select(DB::raw(1))
+					->from('evento_perfil_grupos as pg')
+					->join('campos as c', function($join) {
+						$join->on('c.evento_perfil_grupo_id', '=', 'pg.id');
+					})
+					->join('participante_campos as pc', function($join) {
+						$join->on('pc.campo_id', '=', 'c.id');
+					})
+					->where('pc.participante_id', $participante->id)
+					->where('pg.id', $input['grupo_id'])
+					->whereRaw('pc.id = participante_campo_alternativas.participante_campo_id');
+			})
+				->whereNotIn('participante_campo_id', $participanteCampos)
+				->delete();
+		}
+
+		return $participante;
+	}
+
+	public function logoutParticipant($slug)
+	{
+		Auth::logout();
+		return redirect(route('site.evento', ['slug' => $slug]));
+	}
 }

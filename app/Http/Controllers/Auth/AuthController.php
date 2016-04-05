@@ -6,7 +6,11 @@ use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Session;
 use Auth;
+use Route;
+use URL;
 use Illuminate\Http\RedirectResponse;
+use Talentos\Participantes;
+use Talentos\Role;
 
 class AuthController extends Controller {
 
@@ -30,18 +34,23 @@ class AuthController extends Controller {
 	 * @param  \Illuminate\Contracts\Auth\Registrar  $registrar
 	 * @return void
 	 */
-
 	protected $redirectPath = 'auth/redireciona';
 
 	public function __construct(Guard $auth, Registrar $registrar)
 	{
 		$this->auth = $auth;
 		$this->registrar = $registrar;
+
+		/*$targetUrl = redirect()->intended()->getTargetUrl();
+		$previousUrl = URL::previous();
+		$this->redirectAfterLogout = '';*/
+
 		$this->middleware('guest', ['except' => 'getLogout']);
 	}
 
 	
-	public function getRegister(){
+	public function getRegister()
+	{
 		if (!$this->auth->check()){
 			Session::flash('erro','Área de acesso restrito.');
 			return new RedirectResponse(url('index'));
@@ -59,24 +68,23 @@ class AuthController extends Controller {
 
 	}*/
 
-	public function redireciona(){
+	public function redireciona()
+	{
 		if ((int) $this->auth->user()->ativo !== 1){
 			Session::flash('erro','O seu operador não está ativo.');
 			Auth::logout();
 			return new RedirectResponse(url('index'));
 		}
 
-		switch($this->auth->user()->role_id){
-			case 1:
-			case 2:
-			case 3:
-				$redirect = 'admin/home';
-				break;
-			case 4:
-				$redirect = 'usuario/home/';
+		$role = Role::find($this->auth->user()->role_id);
+
+		switch($role->name){
+			case Role::PARTICIPANTE:
+				$slug = Participantes::slugFromContact($this->auth->contato_id);
+				$redirect = route('site.participant', ['slug', $slug]);
 				break;
 			default:
-				$redirect = 'home';
+				$redirect = 'admin/dashboard';
 				break;
 		}
 		
