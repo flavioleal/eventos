@@ -261,7 +261,7 @@
 	
 	<!--<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
 
-
+	@if (Route::current()->getName() == 'admin.evento')
 	<script>
 		var marker,map, infowindow;
 		function initMap() {
@@ -384,6 +384,8 @@
 	</script>
 
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyAsJG9VU0Mc4M_J3xFTrNzHx5Yt3gedl9I&libraries=places&callback=initMap"></script>
+	@endif
+
 	<script src="/assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
 	<script src="/assets/plugins/jquery-jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 	<script src="/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
@@ -401,19 +403,10 @@
 	<script src="/assets/js/custom.js"></script>
 	<script src="/assets/js/configurar-perfil.js"></script>
 	<script src="/assets/js/gerenciar-campos.js"></script>
-
-	@if (Route::current()->getName() == 'evento.showAll')
 	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
 	<link href="/js/jquery-bootgrid/jquery.bootgrid.css" rel="stylesheet" />
 	<script src="/js/jquery-bootgrid/jquery.bootgrid.js"></script>
 	<script src="/js/jquery-bootgrid/jquery.bootgrid.fa.js"></script>
-
-	<script>
-		$(document).ready(function() {
-
-		});
-	</script>
-	@endif
 	
 	<script type="text/javascript">
 		var PAGINAATUAL = '{{ Request::url() }}',
@@ -431,11 +424,18 @@
 			        'X-CSRF-TOKEN':'{!! csrf_token() !!}'
 			    }
 			});
+			//initialize aplication
+			App.init();
 
 			@if (Route::current()->getName() == 'evento.showAll')
 			$(".bootgrid").bootgrid().on("loaded.rs.jquery.bootgrid", function (e) {
 				$('.bootgrid tbody tr').each(function(){
-					var id = $(this).find('td:first').text();
+					var $td = $(this).find('td:first');
+
+					if ($td.hasClass('no-results')) {
+						return false;
+					}
+					var id = $td.text();
 					//editar
 					$(this).find('td:last').append(
 						$('<a></a>')
@@ -472,15 +472,17 @@
 				});
 			});
 			@endif
-			App.init();
-			Dashboard.init();
 
+			@if (Route::current()->getName() == 'admin.dashboard')
+			Dashboard.init();
+			@endif
+
+			@if (Route::current()->getName() == 'admin.evento')
 			FormWizardValidation.init();
 			FormPlugins.init();
 			FormSliderSwitcher.init();
-
+			@endif
 		});
-
 
 		var Notificar = {
 			sucesso: function(msg, tempo){
@@ -529,5 +531,12 @@
             Notificar.erro('{!! Session::get("erro") !!}');
         @endif
 	</script>
+
+	@if (Route::current()->getName() == 'attendee.showAll')
+	{!! Html::script('js/attendee/show.all.js') !!}
+	@endif
+	@if (Route::current()->getName() == 'attendee.badgeModel' || Route::current()->getName() == 'attendee.badgeModelV2')
+		{!! Html::script('js/attendee/badge.model.js') !!}
+	@endif
 </body>
 </html>

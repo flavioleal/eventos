@@ -403,16 +403,6 @@ Route::post(
 );
 
 Route::get(
-	'admin/lista-de-participantes',
-	[
-		'as'=>'attendee.showAll',
-		'uses'=>'Admin\AttendeeController@showAll',
-		'middleware' => ['auth', 'roles'],
-		'roles' => ['Master','Administrador','Gerência']
-	]
-);
-
-Route::get(
 	'admin/dashboard',
 	[
 		'as'=>'admin.dashboard',
@@ -437,6 +427,56 @@ Route::any(
 	[
 		'as'=>'evento.showAll',
 		'uses'=>'EventoController@showAll',
+		'middleware' => ['auth', 'roles'],
+		'roles' => ['Master','Administrador','Gerência']
+	]
+);
+
+Route::any(
+	'admin/lista-de-participantes/{evento?}',
+	[
+		'as'=>'attendee.showAll',
+		'uses'=>'Admin\AttendeeController@showAll',
+		'middleware' => ['auth', 'roles'],
+		'roles' => ['Master','Administrador','Gerência']
+	]
+);
+
+Route::any(
+	'admin/participante/credencial/{participante}',
+	[
+		'as'=>'attendee.badge',
+		'uses'=>'Admin\AttendeeController@badge',
+		'middleware' => ['auth', 'roles'],
+		'roles' => ['Master','Administrador','Gerência']
+	]
+);
+
+Route::any(
+	'admin/participante/credenciar/{participante}',
+	[
+		'as'=>'attendee.validate',
+		'uses'=>'Admin\AttendeeController@validate',
+		'middleware' => ['auth', 'roles'],
+		'roles' => ['Master','Administrador','Gerência']
+	]
+);
+
+Route::any(
+	'admin/participante/modelo-credencial-v2/{evento}',
+	[
+		'as'=>'attendee.badgeModelV2',
+		'uses'=>'Admin\AttendeeController@badgeModelV2',
+		'middleware' => ['auth', 'roles'],
+		'roles' => ['Master','Administrador','Gerência']
+	]
+);
+
+Route::any(
+	'admin/participante/modelo-credencial/{evento}',
+	[
+		'as'=>'attendee.badgeModel',
+		'uses'=>'Admin\AttendeeController@badgeModel',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
