@@ -753,8 +753,11 @@
                         <div class="jumbotron m-b-0 text-center">
                             <h1>Concluído!</h1>
                             <p>Parabéns! Um novo evento foi criado com sucesso.<br> Click no link abaixo para visualizá-lo na sua página de inscrição. </p>
-                            <p><a class="btn-acessar-evento btn btn-success btn-lg"
-                                  href="{{ route('site.evento', ['slug' => $form['slug']]) }}">Acessar evento</a></p>
+                            <p><a class="btn-acessar-evento btn btn-success btn-lg" target="_blank"
+                                  @if (isset($form['slug']))
+                                  href="{{ route('site.evento', ['slug' => $form['slug']]) }}"
+                                  @endif
+                                >Acessar evento</a></p>
                         </div>
                     </div>
                     <!-- end wizard step-4 -->

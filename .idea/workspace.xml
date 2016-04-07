@@ -46,8 +46,8 @@
       <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/evento/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.057971016">
-              <caret line="728" column="66" selection-start-line="728" selection-start-column="66" selection-end-line="728" selection-end-column="66" />
+            <state vertical-scroll-proportion="0.7826087">
+              <caret line="758" column="40" selection-start-line="758" selection-start-column="40" selection-end-line="758" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -825,8 +825,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/evento/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.057971016">
-          <caret line="728" column="66" selection-start-line="728" selection-start-column="66" selection-end-line="728" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.7826087">
+          <caret line="758" column="40" selection-start-line="758" selection-start-column="40" selection-end-line="758" selection-end-column="40" />
           <folding />
         </state>
       </provider>
