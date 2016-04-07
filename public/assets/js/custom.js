@@ -241,7 +241,6 @@ $(document).ready(function(){
                 }else
                     $form.attr('data-acao','update');
 
-
                 $form.trigger('saved',retorno);
                 //$('.form-login').submit();
             }
@@ -279,7 +278,6 @@ $(document).ready(function(){
     $(document).on('click','.grid-xhr-destroy',function(e){
     	if(window.confirm('Tem certeza que deseja excluir o registro?')){
             var $linha = $(this).closest('tr');
-
             $.ajax({
                 url: $(this).attr('data-url'),
                 type:'POST',
@@ -292,7 +290,8 @@ $(document).ready(function(){
                         if($linha.closest('tbody').find('tr').length == 1){
                         	var colspan = $linha.closest('table').find('thead th').length;
                         	$linha.closest('tbody').html(
-								$('<tr></tr>').addClass('nenhum-item').html('<td colspan="'+colspan+'">Nenhum registro adicionado.</td>')
+								$('<tr></tr>').addClass('nenhum-item')
+                                    .html('<td colspan="'+colspan+'">Nenhum registro adicionado.</td>')
 							);
                         }else
                         	$linha.remove();
@@ -304,11 +303,9 @@ $(document).ready(function(){
             });
         }
     });
-
 	//FORMULÁRIO DE DADOS PRINCIPAIS DO EVENTOS
 	$('form#form-evento').on('submit',function(e){
         e.preventDefault();
-
         var $form = $(this),
             evento_id = $('form#form-evento [name="id"]').val();
 
@@ -319,12 +316,9 @@ $(document).ready(function(){
             //salva o campo wysiwyg
             tinyMCE.triggerSave();
         }
-        
         var data = $form.serialize();
-
         $form.trigger('xhr',{fields:data});
     });
-
     //FORMULÁRIO DE DADOS PRINCIPAIS DO EVENTOS
     $('form#form-evento-design').on('submit',function(e){
         e.preventDefault();

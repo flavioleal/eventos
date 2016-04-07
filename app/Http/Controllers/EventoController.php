@@ -77,6 +77,7 @@ class EventoController extends Controller
 
 		if (!is_null($id)) {
 			$evento = Eventos::select(
+						"evento.slug",
 						"eventos.id",
 						"eventos.evento_status_id",
 						"eventos.titulo",
@@ -180,7 +181,8 @@ class EventoController extends Controller
 
 		$input['slug'] = str_slug($input['titulo']);
 		if (!empty($input['id'])) {
-			Eventos::find($input['id'])->update($input);
+			$evento = Eventos::find($input['id']);
+			$evento->update($input);
 			$id = $input['id'];
 			$mensagem = 'Evento alterado com sucesso.';
 		} else {
@@ -212,7 +214,8 @@ class EventoController extends Controller
 		$response = [
             'status'	=> '1',
             'mensagem'	=> $mensagem,
-            'id'		=> $id
+            'id'		=> $id,
+			'slug'		=> $evento->slug
         ];
  
         return Response::json( $response );
