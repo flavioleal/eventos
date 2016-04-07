@@ -433,14 +433,15 @@
 					var /*$td = $(this).find('td[data-column-id="id"]'),
 						slug = $(this).find('td[data-column-id="slug"]').text();*/
 						$td = $(this).find('td').first().hide(),
-						slug = $(this).find('td').last().hide().text();
+						slug = $(this).find('td').last().hide().text(),
+						$acoes = $(this).find('td').last().prev();
 
 					if ($td.hasClass('no-results')) {
 						return false;
 					}
 					var id = $td.text();
 					//acessar
-					$(this).find('td:visible:last').append(
+					$acoes.append(
 						$('<a></a>')
 							.attr({
 								'href': ENDERECO + '/evento/' + slug
@@ -456,7 +457,7 @@
 							})
 					);
 					//editar
-					$(this).find('td:visible:last').append(
+					$acoes.find('td:visible:last').append(
 						$('<a></a>')
 							.attr({
 								'href': ENDERECO + '/admin/evento/' + id
@@ -472,7 +473,7 @@
 							})
 					);
 					//excluir
-					$(this).find('td:visible:last').append(
+					$acoes.append(
 						$('<a></a>')
 							.attr({
 								'href': ENDERECO + '/admin/evento/destroy/' + id
