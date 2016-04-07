@@ -29,11 +29,12 @@
                 <h4 class="panel-title">Listagem de Eventos</h4>
             </div>
             <div class="panel-body">
-                <table id="grid-data-api" class="table table-condensed table-hover table-striped bootgrid"
+                <table id="grid-data-api" class="table-responsive table table-condensed table-hover table-striped bootgrid"
                        data-ajax="true" data-url="{{ route('evento.showAll') }}">
                     <thead>
                     <tr>
-                        <th data-column-visible="false" data-column-id="id">ID</th>
+                        <th data-column-id="id">ID</th>
+                        <th data-column-id="slug">ID</th>
                         <th data-column-id="titulo">Título</th>
                         <th data-column-id="local">Local</th>
                         <th data-column-id="data_inicio" data-order="desc">Início</th>
@@ -47,4 +48,10 @@
         </div>
     </div>
 </div>
+
+<style type="text/css">
+    [data-column-id="id"], [data-column-id="slug"] {
+        display: none !important;
+    }
+</style>
 @endsection

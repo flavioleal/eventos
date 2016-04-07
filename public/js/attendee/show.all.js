@@ -65,7 +65,7 @@ $(document).ready(function() {
                     .html(
                         $('<i></i>').addClass('fa fa-barcode')
                     ).tooltip({
-                    'title': 'Emitir crachá'
+                    'title': 'Emitir credencial'
                 })
             );
             //validar crachá

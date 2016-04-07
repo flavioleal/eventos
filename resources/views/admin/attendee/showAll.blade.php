@@ -41,9 +41,11 @@
                         <a href="{{ route('attendee.badgeModel', ['evento' => $eventoId]) }}"
                            class="btn btn-default"><i class="fa fa-barcode"></i> Modelo da credencial</a>
 
-
                         <a href="" class="btn btn-default">
                             <i class="glyphicon glyphicon-print"></i> Imprimir credenciais selecionadas</a>
+
+                        <a href="" class="btn btn-default">
+                            <i class="fa fa-check-square-o"></i> Credenciar participante</a>
                     </div>
                 </form>
             </div>
@@ -60,7 +62,7 @@
                 <h4 class="panel-title">Listagem de Participantes</h4>
             </div>
             <div class="panel-body">
-                <table id="grid-data-api" class="table table-condensed table-hover table-striped bootgrid"
+                <table id="grid-data-api" class="table-responsive table table-condensed table-hover table-striped bootgrid"
                        data-ajax="true" data-url="{{ route('attendee.showAll', ['evento' =>  $eventoId]) }}">
                     <thead>
                     <tr>
