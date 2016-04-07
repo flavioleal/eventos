@@ -39,13 +39,16 @@
                     </div>
                     <div class="form-group">
                         <a href="{{ route('attendee.badgeModel', ['evento' => $eventoId]) }}"
-                           class="btn btn-default"><i class="fa fa-barcode"></i> Criar modelo do credencial</a>
+                           class="btn btn-default"><i class="fa fa-barcode"></i> Modelo da credencial</a>
+
+
+                        <a href="" class="btn btn-default">
+                            <i class="glyphicon glyphicon-print"></i> Imprimir credenciais selecionadas</a>
                     </div>
                 </form>
             </div>
         </div>
         @endif
-
         <div class="panel panel-inverse">
             <div class="panel-heading">
                 <div class="panel-heading-btn">
@@ -61,7 +64,7 @@
                        data-ajax="true" data-url="{{ route('attendee.showAll', ['evento' =>  $eventoId]) }}">
                     <thead>
                     <tr>
-                        <th data-column-visible="false" data-column-id="id" data-visible="false">ID</th>
+                        <th data-column-visible="false" data-column-id="id"><input type="checkbox" /></th>
                         <th data-column-id="perfil">Perfil</th>
                         <th data-column-id="usuario">Usuário</th>
                         <th data-column-id="chave">Chave</th>
@@ -74,4 +77,9 @@
         </div>
     </div>
 </div>
+<style>
+    th[data-column-id=id] {
+        width: 40px;
+    }
+</style>
 @endsection

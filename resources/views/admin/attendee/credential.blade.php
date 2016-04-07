@@ -44,20 +44,21 @@
                             <div class="content-badge">
                                 <select name="campo1">
                                     @foreach ($campos as $c)
-                                    <option @if (($c->classe == 'nome' && !isset($evento->credencial_html[0])) ||
-                                                (!empty($c->classe) && $c->classe == $evento->credencial_html[0]))
+                                    <option @if ((!isset($evento->credencial_html[0]) && $c->classe == 'nome') ||
+                                                 (!empty($c->classe) && $c->classe == $evento->credencial_html[0]))
                                             selected="selected"
                                             @endif
-                                            value="{{ $c->classe }}">{{ $c->classe }}</option>
+                                            data="{{ $evento->credencial_html[0] }}"
+                                            value="{{ $c->classe }}">{{ $c->valor }}</option>
                                     @endforeach
                                 </select>
                                 <select name="campo2">
                                     @foreach ($campos as $c)
-                                        <option @if (($c->classe == 'cpf' && !isset($evento->credencial_html[1])) ||
-                                                  (!empty($c->classe) && $c->classe == $evento->credencial_html[1]))
+                                        <option @if ((!isset($evento->credencial_html[1]) && $c->classe == 'cpf') ||
+                                                 (!empty($c->classe) && $c->classe == $evento->credencial_html[1]))
                                                 selected="selected"
                                                 @endif
-                                                value="{{ $c->classe }}">{{ $c->classe }}</option>
+                                                value="{{ $c->classe }}">{{ $c->valor }}</option>
                                     @endforeach
                                 </select>
                                 <div class="codigo-barra"></div>
@@ -115,7 +116,7 @@
         height: 30px;
         overflow: hidden;
         margin: auto;
-        background: url('/img/codigo-barras.png');
+        background: url('{{ $barcode }}');
         background-position: center -6px;
         background-repeat: no-repeat;
         background-size: 160px;

@@ -30,10 +30,10 @@ class Participantes extends Model
 	public static function slugFromContact($contato_id)
 	{
 		$evento = Eventos::select('eventos.slug')
-			->join('EventoPerfis as ep', function($join) {
+			->join('evento_perfis as ep', function($join) {
 				$join->on('ep.evento_id', '=', 'eventos.id');
 			})
-			->join('Participantes as p', function($join) {
+			->join('participantes as p', function($join) {
 				$join->on('p.evento_perfil_id', '=', 'ep.id');
 			})
 			->where('p.contato_id', $contato_id)
@@ -61,5 +61,21 @@ class Participantes extends Model
 	public function generateKey()
 	{
 		return strtoupper(md5($this->id));
+	}
+
+	public static function eventoFromParticipante($participanteId)
+	{
+		$evento = Eventos::select('eventos.*')
+			->join('evento_perfis as ep', function($join) {
+				$join->on('ep.evento_id', '=', 'eventos.id');
+			})
+			->join('participantes as p', function($join) {
+				$join->on('p.evento_perfil_id', '=', 'ep.id');
+			})
+			->where('p.id', $participanteId)
+			->get()
+			->first();
+
+		return $evento;
 	}
 }

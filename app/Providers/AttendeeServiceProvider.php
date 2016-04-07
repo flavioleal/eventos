@@ -17,7 +17,7 @@ class AttendeeServiceProvider extends ServiceProvider
 	public function register()
 	{
         $this->app->bind('Attendee', function() {
-		    return new CredentialService();
+		    new CredentialService();
 		});
 	}
 }

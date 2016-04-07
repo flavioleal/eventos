@@ -535,8 +535,13 @@
 	@if (Route::current()->getName() == 'attendee.showAll')
 	{!! Html::script('js/attendee/show.all.js') !!}
 	@endif
+
 	@if (Route::current()->getName() == 'attendee.badgeModel' || Route::current()->getName() == 'attendee.badgeModelV2')
 		{!! Html::script('js/attendee/badge.model.js') !!}
+	@endif
+
+	@if (Route::current()->getName() == 'attendee.credential')
+		{!! Html::script('js/attendee/credential.all.js') !!}
 	@endif
 </body>
 </html>

@@ -432,52 +432,59 @@ Route::any(
 	]
 );
 
-Route::any(
-	'admin/lista-de-participantes/{evento?}',
-	[
-		'as'=>'attendee.showAll',
-		'uses'=>'Admin\AttendeeController@showAll',
-		'middleware' => ['auth', 'roles'],
-		'roles' => ['Master','Administrador','Gerência']
-	]
-);
-
-Route::any(
-	'admin/participante/credencial/{participante}',
-	[
-		'as'=>'attendee.badge',
-		'uses'=>'Admin\AttendeeController@badge',
-		'middleware' => ['auth', 'roles'],
-		'roles' => ['Master','Administrador','Gerência']
-	]
-);
-
-Route::any(
-	'admin/participante/credenciar/{participante}',
-	[
-		'as'=>'attendee.validate',
-		'uses'=>'Admin\AttendeeController@validate',
-		'middleware' => ['auth', 'roles'],
-		'roles' => ['Master','Administrador','Gerência']
-	]
-);
-
-Route::any(
-	'admin/participante/modelo-credencial-v2/{evento}',
-	[
-		'as'=>'attendee.badgeModelV2',
-		'uses'=>'Admin\AttendeeController@badgeModelV2',
-		'middleware' => ['auth', 'roles'],
-		'roles' => ['Master','Administrador','Gerência']
-	]
-);
-
-Route::any(
-	'admin/participante/modelo-credencial/{evento}',
-	[
-		'as'=>'attendee.badgeModel',
-		'uses'=>'Admin\AttendeeController@badgeModel',
-		'middleware' => ['auth', 'roles'],
-		'roles' => ['Master','Administrador','Gerência']
-	]
-);
+Route::group(['prefix'=>'admin/participante'],function() {
+	Route::any(
+		'listagem/{evento?}',
+		[
+			'as'=>'attendee.showAll',
+			'uses'=>'Admin\AttendeeController@showAll',
+			'middleware' => ['auth', 'roles'],
+			'roles' => ['Master','Administrador','Gerência']
+		]
+	);
+	Route::any(
+		'credencial/{participante}',
+		[
+			'as'=>'attendee.badge',
+			'uses'=>'Admin\AttendeeController@credential',
+			'middleware' => ['auth', 'roles'],
+			'roles' => ['Master','Administrador','Gerência']
+		]
+	);
+	Route::any(
+		'credenciar/{participante}',
+		[
+			'as'=>'attendee.validate',
+			'uses'=>'Admin\AttendeeController@validate',
+			'middleware' => ['auth', 'roles'],
+			'roles' => ['Master','Administrador','Gerência']
+		]
+	);
+	Route::any(
+		'modelo-credencial-v2/{evento}',
+		[
+			'as'=>'attendee.badgeModelV2',
+			'uses'=>'Admin\AttendeeController@badgeModelV2',
+			'middleware' => ['auth', 'roles'],
+			'roles' => ['Master','Administrador','Gerência']
+		]
+	);
+	Route::any(
+		'modelo-credencial/{evento}',
+		[
+			'as'=>'attendee.badgeModel',
+			'uses'=>'Admin\AttendeeController@badgeModel',
+			'middleware' => ['auth', 'roles'],
+			'roles' => ['Master','Administrador','Gerência']
+		]
+	);
+	Route::any(
+		'armazenar-modelo-credencial',
+		[
+			'as'=>'attendee.storeCredential',
+			'uses'=>'Admin\AttendeeController@storeCredential',
+			'middleware' => ['auth', 'roles'],
+			'roles' => ['Master','Administrador','Gerência']
+		]
+	);
+});

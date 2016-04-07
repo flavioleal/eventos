@@ -11,11 +11,11 @@ $(document).ready(function() {
     $(".bootgrid").bootgrid().on("loaded.rs.jquery.bootgrid", function (e) {
         $('.bootgrid tbody tr').each(function(){
             var $td = $(this).find('td:first');
-
             if ($td.hasClass('no-results')) {
                 return false;
             }
             var id = $td.text();
+            $td.html('<input type="checkbox" />');
             //editar
             $(this).find('td:last').append(
                 $('<a></a>')
@@ -66,10 +66,6 @@ $(document).ready(function() {
                         $('<i></i>').addClass('fa fa-barcode')
                     ).tooltip({
                     'title': 'Emitir crachá'
-                }).on('click', function(){
-                    if (!confirm('Tem certeza que deseja emitir a credencial')) {
-                        return false;
-                    }
                 })
             );
             //validar crachá
