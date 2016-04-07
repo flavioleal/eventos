@@ -444,7 +444,8 @@
 					$acoes.append(
 						$('<a></a>')
 							.attr({
-								'href': ENDERECO + '/evento/' + slug
+								'href': ENDERECO + '/evento/' + slug,
+								'target': '_blank'
 							})
 							.css({
 								'margin-right': '10px'
