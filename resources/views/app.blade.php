@@ -430,7 +430,10 @@
 			@if (Route::current()->getName() == 'evento.showAll')
 			$(".bootgrid").bootgrid().on("loaded.rs.jquery.bootgrid", function (e) {
 				$('.bootgrid tbody tr').each(function(){
-					var $td = $(this).find('td[data-column-id="id"]');
+					var /*$td = $(this).find('td[data-column-id="id"]'),
+						slug = $(this).find('td[data-column-id="slug"]').text();*/
+						$td = $(this).first(),
+						slug = $(this).last().text();
 
 					if ($td.hasClass('no-results')) {
 						return false;
@@ -440,7 +443,7 @@
 					$(this).find('td:last').append(
 						$('<a></a>')
 							.attr({
-								'href': ENDERECO + '/evento/' + $(this).find('td[data-column-id="slug"]').text()
+								'href': ENDERECO + '/evento/' + slug
 							})
 							.css({
 								'margin-right': '10px'

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="11ec2480-9862-475c-94cc-8661379e7e21" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/evento/showAll.blade.php" afterPath="$PROJECT_DIR$/resources/views/evento/showAll.blade.php" />
     </list>
     <ignored path="talentos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,7 +47,7 @@
       <file leaf-file-name="jquery.bootgrid.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/jquery-bootgrid/jquery.bootgrid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-3.3333333">
               <caret line="1361" column="36" selection-start-line="1361" selection-start-column="36" selection-end-line="1361" selection-end-column="36" />
               <folding>
                 <marker date="1460058393785" expanded="true" signature="48901:48914" placeholder="..." />
@@ -59,8 +60,8 @@
       <file leaf-file-name="showAll.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/evento/showAll.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.375">
-              <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+            <state vertical-scroll-proportion="-19.0">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,8 +70,8 @@
       <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41223833">
-              <caret line="442" column="112" selection-start-line="442" selection-start-column="112" selection-end-line="442" selection-end-column="112" />
+            <state vertical-scroll-proportion="0.36392915">
+              <caret line="440" column="40" selection-start-line="440" selection-start-column="40" selection-end-line="440" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -890,12 +891,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/attendee/show.all.js">
+    <entry file="file://$PROJECT_DIR$/public/js/jquery-bootgrid/jquery.bootgrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5271318">
-          <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
+        <state vertical-scroll-proportion="-3.3333333">
+          <caret line="1361" column="36" selection-start-line="1361" selection-start-column="36" selection-end-line="1361" selection-end-column="36" />
           <folding>
-            <element signature="e#0#47#0" expanded="false" />
+            <marker date="1460058393785" expanded="true" signature="48901:48914" placeholder="..." />
+            <marker date="1460058393785" expanded="true" signature="49483:49496" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -910,29 +912,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jquery-bootgrid/jquery.bootgrid.js">
+    <entry file="file://$PROJECT_DIR$/public/js/attendee/show.all.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1361" column="36" selection-start-line="1361" selection-start-column="36" selection-end-line="1361" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.5271318">
+          <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
           <folding>
-            <marker date="1460058393785" expanded="true" signature="48901:48914" placeholder="..." />
-            <marker date="1460058393785" expanded="true" signature="49483:49496" placeholder="..." />
+            <element signature="e#0#47#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/evento/showAll.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.375">
-          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+        <state vertical-scroll-proportion="-19.0">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41223833">
-          <caret line="442" column="112" selection-start-line="442" selection-start-column="112" selection-end-line="442" selection-end-column="112" />
+        <state vertical-scroll-proportion="0.36392915">
+          <caret line="440" column="40" selection-start-line="440" selection-start-column="40" selection-end-line="440" selection-end-column="40" />
           <folding />
         </state>
       </provider>

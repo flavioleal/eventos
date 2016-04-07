@@ -34,13 +34,13 @@
                     <thead>
                     <tr>
                         <th data-column-id="id">ID</th>
-                        <th data-column-id="slug">ID</th>
                         <th data-column-id="titulo">Título</th>
                         <th data-column-id="local">Local</th>
                         <th data-column-id="data_inicio" data-order="desc">Início</th>
                         <th data-column-id="data_fim" data-order="desc">Término</th>
                         <th data-column-id="participantes" data-order="desc">Participantes</th>
                         <th data-column-id="actions" data-order="desc">Ações</th>
+                        <th data-column-id="slug">ID</th>
                     </tr>
                     </thead>
                 </table>
@@ -52,6 +52,9 @@
 <style type="text/css">
     [data-column-id="id"], [data-column-id="slug"] {
         display: none !important;
+    }
+    table tr > td:first-child, table tr > td:last-child {
+        display: none;
     }
 </style>
 @endsection
