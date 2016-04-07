@@ -735,7 +735,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 hide">
                                         <hr>
                                         <div class="form-group">
                                             <button type="button" class="btn btn-lg btn-default pull-right">
@@ -754,7 +754,7 @@
                             <h1>Concluído!</h1>
                             <p>Parabéns! Um novo evento foi criado com sucesso.<br> Click no link abaixo para visualizá-lo na sua página de inscrição. </p>
                             <p><a class="btn-acessar-evento btn btn-success btn-lg"
-                                  href="{{ route('site.evento', ['slug' => $form['descricao']]) }}">Acessar evento</a></p>
+                                  href="{{ route('site.evento', ['slug' => $form['slug']]) }}">Acessar evento</a></p>
                         </div>
                     </div>
                     <!-- end wizard step-4 -->
