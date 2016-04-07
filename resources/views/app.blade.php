@@ -458,7 +458,7 @@
 							})
 					);
 					//editar
-					$acoes.find('td:visible:last').append(
+					$acoes.append(
 						$('<a></a>')
 							.attr({
 								'href': ENDERECO + '/admin/evento/' + id
@@ -479,7 +479,7 @@
 							.attr({
 								'href': ENDERECO + '/admin/evento/destroy/' + id
 							})
-							.addClass('btn btn-default btn-sm')
+							.addClass('btn btn-default btn-sm hide')
 							.html(
 									$('<i></i>').addClass('glyphicon glyphicon-trash')
 							).tooltip({
