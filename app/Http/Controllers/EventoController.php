@@ -77,7 +77,7 @@ class EventoController extends Controller
 
 		if (!is_null($id)) {
 			$evento = Eventos::select(
-						"evento.slug",
+						"eventos.slug",
 						"eventos.id",
 						"eventos.evento_status_id",
 						"eventos.titulo",
