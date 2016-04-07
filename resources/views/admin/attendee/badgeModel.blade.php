@@ -41,8 +41,19 @@
                             </div>
                             <h3>{{ $evento->titulo }}</h3>
                             <div class="content-badge">
-                                <div class="codigo-barra">
-                                </div>
+                                <select name="campo1">
+                                    @foreach ($campos as $c)
+                                    <option @if ($c->classe == 'nome') selected="selected" @endif
+                                            value="{{ $c->id }}">{{ $c->campo }}</option>
+                                    @endforeach
+                                </select>
+                                <select name="campo2">
+                                    @foreach ($campos as $c)
+                                        <option @if ($c->classe == 'cpf') selected="selected" @endif
+                                                value="{{ $c->id }}">{{ $c->campo }}</option>
+                                    @endforeach
+                                </select>
+                                <div class="codigo-barra"></div>
                                 <img src="/img/compumake-logo.png"
                                      style="position:absolute;
                                             bottom: 10px;
@@ -58,6 +69,24 @@
 </div>
 
 <style type="text/css">
+    .content-badge select {
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    .content-badge [name="campo1"] {
+        font-size: 20px;
+        margin: 10px auto;
+        display: block;
+        text-align-last: center;
+    }
+    .content-badge [name="campo2"] {
+        font-size: 15px;
+        margin: 10px auto;
+        display: block;
+        text-align-last: center;
+    }
     .point {
         width: 20px;
         height: 20px;
@@ -122,6 +151,7 @@
     .front-badge {
         background-image: url('/img/texturas/textura-3.png');
         background-color: {{ $evento->cor_predominante }};
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
         border-radius: 10px;
         position: relative;
     }

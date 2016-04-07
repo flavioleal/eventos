@@ -34,7 +34,8 @@ class Eventos extends Model {
 		'facebook',
 		'twitter',
 		'youtube',
-		'slug'
+		'slug',
+		'credencial_html'
 	];
 
 	/*public function profissionalArea(){

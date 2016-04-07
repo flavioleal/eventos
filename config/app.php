@@ -137,10 +137,7 @@ return [
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Html\HtmlServiceProvider',
-
 		'Jenssegers\Date\DateServiceProvider',
-		
-
 		/*
 		 * Application Service Providers...
 		 */
@@ -150,8 +147,7 @@ return [
 		'Talentos\Providers\EventServiceProvider',
 		'Talentos\Providers\RouteServiceProvider',
 		'Talentos\Providers\MacroServiceProvider',
-		#'Talentos\Providers\ChartsServiceProvider'
-		#'Talentos\Providers\HelperServiceProvider',
+		'Talentos\Providers\AttendeeServiceProvider'
 	],
 
 	/*
@@ -166,7 +162,6 @@ return [
 	*/
 
 	'aliases' => [
-
 		'App'       => 'Illuminate\Support\Facades\App',
 		'Artisan'   => 'Illuminate\Support\Facades\Artisan',
 		'Auth'      => 'Illuminate\Support\Facades\Auth',
@@ -203,9 +198,6 @@ return [
 		'Html'		=> 'Illuminate\Html\HtmlFacade',
 		'Cnpj'		=> 'JansenFelipe\CnpjGratis\CnpjGratis',
 		'Cpf'		=> 'JansenFelipe\CpfGratis\CpfGratis'
-		#'Charts' => 'Talentos\Services\Charts',
-
-
 	],
 
 ];

@@ -84,7 +84,7 @@ class AttendeeController extends Controller
             ->get()[0];
 
         $campos = Campos::from('campos as c')
-            ->select('c.campo')
+            ->select('c.campo', 'c.id', 'c.classe')
             ->join('evento_perfis as ep', function($join) {
                 $join->on('ep.id', '=', 'c.evento_perfil_id');
             })
