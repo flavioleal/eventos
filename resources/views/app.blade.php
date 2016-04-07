@@ -440,14 +440,14 @@
 					$(this).find('td:last').append(
 						$('<a></a>')
 							.attr({
-								'href': ENDERECO + '/evento/' + $(this).find('td[data-column-id="slug"]')
+								'href': ENDERECO + '/evento/' + $(this).find('td[data-column-id="slug"]').text()
 							})
 							.css({
 								'margin-right': '10px'
 							})
 							.addClass('btn btn-default btn-sm')
 							.html(
-								$('<i></i>').addClass('fa fa-cog')
+								$('<i></i>').addClass('glyphicon glyphicon-edit')
 							).tooltip({
 								'title': 'Acessar evento'
 							})

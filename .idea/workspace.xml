@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11ec2480-9862-475c-94cc-8661379e7e21" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/093F65E080A295F8076B1C5722A46AA2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/66F041E16A60928B05A7E228A89C3799.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/attendee/show.all.js" afterPath="$PROJECT_DIR$/public/js/attendee/show.all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery-bootgrid/jquery.bootgrid.js" afterPath="$PROJECT_DIR$/public/js/jquery-bootgrid/jquery.bootgrid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/attendee/showAll.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/attendee/showAll.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/evento/showAll.blade.php" afterPath="$PROJECT_DIR$/resources/views/evento/showAll.blade.php" />
     </list>
     <ignored path="talentos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,8 +69,8 @@
       <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58132046">
-              <caret line="449" column="37" selection-start-line="449" selection-start-column="37" selection-end-line="449" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.41223833">
+              <caret line="442" column="112" selection-start-line="442" selection-start-column="112" selection-end-line="442" selection-end-column="112" />
               <folding />
             </state>
           </provider>
@@ -518,10 +511,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-26" width="1362" height="795" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27473363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27473363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -938,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58132046">
-          <caret line="449" column="37" selection-start-line="449" selection-start-column="37" selection-end-line="449" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.41223833">
+          <caret line="442" column="112" selection-start-line="442" selection-start-column="112" selection-end-line="442" selection-end-column="112" />
           <folding />
         </state>
       </provider>
