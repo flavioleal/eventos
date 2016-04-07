@@ -440,7 +440,7 @@
 					}
 					var id = $td.text();
 					//acessar
-					$(this).find('td:last').append(
+					$(this).find('td:visible:last').append(
 						$('<a></a>')
 							.attr({
 								'href': ENDERECO + '/evento/' + slug
@@ -456,7 +456,7 @@
 							})
 					);
 					//editar
-					$(this).find('td:last').append(
+					$(this).find('td:visible:last').append(
 						$('<a></a>')
 							.attr({
 								'href': ENDERECO + '/admin/evento/' + id
@@ -472,7 +472,7 @@
 							})
 					);
 					//excluir
-					$(this).find('td:last').append(
+					$(this).find('td:visible:last').append(
 						$('<a></a>')
 							.attr({
 								'href': ENDERECO + '/admin/evento/destroy/' + id

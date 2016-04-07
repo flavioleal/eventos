@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="11ec2480-9862-475c-94cc-8661379e7e21" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/evento/showAll.blade.php" afterPath="$PROJECT_DIR$/resources/views/evento/showAll.blade.php" />
     </list>
     <ignored path="talentos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,8 +69,8 @@
       <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2431562">
-              <caret line="435" column="63" selection-start-line="435" selection-start-column="63" selection-end-line="435" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.31561998">
+              <caret line="474" column="44" selection-start-line="474" selection-start-column="44" selection-end-line="474" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -932,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2431562">
-          <caret line="435" column="63" selection-start-line="435" selection-start-column="63" selection-end-line="435" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.31561998">
+          <caret line="474" column="44" selection-start-line="474" selection-start-column="44" selection-end-line="474" selection-end-column="44" />
           <folding />
         </state>
       </provider>
