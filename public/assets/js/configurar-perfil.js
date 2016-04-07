@@ -69,8 +69,6 @@ $(document).ready(function(){
 
     //evento perfil - adiciona perfil
     $('form#perfil-principal').on('saved',function(event,data){
-        $('.btn-acessar-evento').attr('href', ENDERECO + 'evento/' + data.slug);
-
         if($('.grid-evento-perfis tbody tr[data-id="'+data.id+'"]').length){
             var $linha = $('.grid-evento-perfis tbody tr[data-id="'+data.id+'"]'),
                 url_destroy = ENDERECO+'/admin/evento/perfil-destroy/'+data.id;

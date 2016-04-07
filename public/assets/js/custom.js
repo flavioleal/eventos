@@ -303,6 +303,11 @@ $(document).ready(function(){
             });
         }
     });
+
+    $('form#form-evento').on('saved',function(event,data){
+        $('.btn-acessar-evento').attr('href', ENDERECO + 'evento/' + data.slug);
+    });
+
 	//FORMULÁRIO DE DADOS PRINCIPAIS DO EVENTOS
 	$('form#form-evento').on('submit',function(e){
         e.preventDefault();
