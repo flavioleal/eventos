@@ -1,10 +1,10 @@
-<?php namespace Talentos\Handlers\Events;
+<?php namespace App\Handlers\Events;
 
-//use Talentos\Events\
+//use App\Events\
 
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldBeQueued;
-use Talentos\User;
+use App\User;
 use DateTime;
 
 class AuthLoginEventHandler {

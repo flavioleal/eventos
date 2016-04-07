@@ -1,6 +1,6 @@
-<?php namespace Talentos\Providers;
+<?php namespace App\Providers;
 
-use Talentos\Services\Macros;
+use App\Services\Macros;
 
 /**
  * Class MacroServiceProvider

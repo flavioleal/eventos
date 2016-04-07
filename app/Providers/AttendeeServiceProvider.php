@@ -1,7 +1,7 @@
-<?php namespace Talentos\Providers;
+<?php namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Talentos\Services\Attendee\CredentialService;
+use App\Services\Attendee\CredentialService;
 
 class AttendeeServiceProvider extends ServiceProvider
 {

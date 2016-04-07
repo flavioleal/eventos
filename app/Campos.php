@@ -1,4 +1,4 @@
-<?php namespace Talentos;
+<?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -23,11 +23,11 @@ class Campos extends Model {
 	];
 
 	public function campoAlternativas(){
-		return $this->hasMany('Talentos\CampoAlternativas','campo_id');
+		return $this->hasMany('App\CampoAlternativas','campo_id');
 	}
 
 	public function campoCondicoes(){
-		return $this->hasMany('Talentos\CampoCondicoes','campo_id');
+		return $this->hasMany('App\CampoCondicoes','campo_id');
 	}
 
     protected static function boot() {

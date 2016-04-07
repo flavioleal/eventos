@@ -1,4 +1,4 @@
-<?php namespace Talentos;
+<?php namespace App;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -32,11 +32,11 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	protected $hidden = ['password', 'remember_token'];
 
 	/*public function empresa(){
-		return $this->hasOne('Talentos\Empresa','user_id','id');
+		return $this->hasOne('App\Empresa','user_id','id');
 	}*/
 
 	public function role(){
-		return $this->hasOne('Talentos\Role', 'id', 'role_id');
+		return $this->hasOne('App\Role', 'id', 'role_id');
 	}
 
 	public function hasRole($roles)

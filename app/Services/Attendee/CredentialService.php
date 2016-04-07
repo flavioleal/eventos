@@ -6,7 +6,7 @@
  * Time: 20:42
  */
 
-namespace Talentos\Services\Attendee;
+namespace App\Services\Attendee;
 
 class CredentialService {
 

@@ -1,4 +1,4 @@
-<?php namespace Talentos;
+<?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,28 +1,28 @@
-<?php namespace Talentos\Http\Controllers;
+<?php namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Session;
-use Talentos\CampoAlternativas;
-use Talentos\Role;
-use Talentos\User;
+use App\CampoAlternativas;
+use App\Role;
+use App\User;
 use View;
 use Symfony\Component\HttpFoundation\Response;
-use Talentos\Campos;
-use Talentos\CampoTipos;
-use Talentos\EventoPerfilGrupos;
-use Talentos\EventoPerfis;
-use Talentos\Http\Requests;
+use App\Campos;
+use App\CampoTipos;
+use App\EventoPerfilGrupos;
+use App\EventoPerfis;
+use App\Http\Requests;
 use Illuminate\Http\Request;
-use Talentos\Eventos;
-use Talentos\Arquivos;
+use App\Eventos;
+use App\Arquivos;
 use Goutte\Client;
 use JansenFelipe\CpfGratis as Cpf;
 use JansenFelipe\CnpjGratis\CnpjGratis as Cnpj;
 use Illuminate\Support\Facades\DB;
 
-use Talentos\Contatos;
-use Talentos\Participantes;
-use Talentos\ParticipanteCampos;
-use Talentos\ParticipanteCampoAlternativas;
+use App\Contatos;
+use App\Participantes;
+use App\ParticipanteCampos;
+use App\ParticipanteCampoAlternativas;
 
 use Auth;
 

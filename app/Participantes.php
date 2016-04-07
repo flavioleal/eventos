@@ -1,4 +1,4 @@
-<?php namespace Talentos;
+<?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,11 +20,11 @@ class Participantes extends Model
 	];
 
 	public function campos(){
-		return $this->hasMany('Talentos\ParticipanteCampos','participante_id');
+		return $this->hasMany('App\ParticipanteCampos','participante_id');
 	}
 
 	public function campoAlternativas(){
-		return $this->hasMany('Talentos\ParticipanteCampoAlternativas','participante_id');
+		return $this->hasMany('App\ParticipanteCampoAlternativas','participante_id');
 	}
 
 	public static function slugFromContact($contato_id)

@@ -6,7 +6,7 @@
  * Time: 22:23
  */
 
-namespace Talentos;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -21,6 +21,6 @@ class EventoPerfilGrupos extends Model {
     ];
 
     public function campos(){
-        return $this->hasMany('Talentos\Campos','evento_perfil_grupo_id');
+        return $this->hasMany('App\Campos','evento_perfil_grupo_id');
     }
 }

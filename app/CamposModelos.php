@@ -1,4 +1,4 @@
-<?php namespace Talentos;
+<?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -18,10 +18,10 @@ class CamposModelos extends Model {
 	];
 
 	public function campoAlternativas(){
-		return $this->hasMany('Talentos\CampoAlternativasModelos','campo_id');
+		return $this->hasMany('App\CampoAlternativasModelos','campo_id');
 	}
 
 	public function campoTipos(){
-		return $this->hasMany('Talentos\CampoTipos', 'id', 'campo_tipo_id');
+		return $this->hasMany('App\CampoTipos', 'id', 'campo_tipo_id');
 	}
 }

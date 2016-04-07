@@ -1,4 +1,4 @@
-<?php namespace Talentos\Providers;
+<?php namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -25,7 +25,7 @@ class HelperServiceProvider extends ServiceProvider {
         foreach (glob(app_path().'/Helpers/*.php') as $filename){
             #die(var_dump($filename));
             require_once($filename);
-            #return new \Talentos\Helpers\Charts;
+            #return new \App\Helpers\Charts;
         }
    }
 }

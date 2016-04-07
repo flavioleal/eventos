@@ -1,4 +1,4 @@
-<?php namespace Talentos\Http\Middleware;
+<?php namespace App\Http\Middleware;
 // First copy this file into your middleware directoy
 
 use Closure;

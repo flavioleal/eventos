@@ -1,4 +1,4 @@
-<?php namespace Talentos\Providers;
+<?php namespace App\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -15,7 +15,7 @@ class EventServiceProvider extends ServiceProvider {
 			'EventListener',
 		],
 		'auth.login' => [
-	        'Talentos\Handlers\Events\AuthLoginEventHandler',
+	        'App\Handlers\Events\AuthLoginEventHandler',
 	    ]
 	];
 

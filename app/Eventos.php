@@ -1,4 +1,4 @@
-<?php namespace Talentos;
+<?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -39,15 +39,15 @@ class Eventos extends Model {
 	];
 
 	/*public function profissionalArea(){
-		return $this->belongsToMany('Talentos\Area','profissional_areas','profissional_id','area_id');
+		return $this->belongsToMany('App\Area','profissional_areas','profissional_id','area_id');
 	}
 
 	public function areasProfissional(){
-		return $this->hasMany('Talentos\ProfissionalArea','profissional_id');
+		return $this->hasMany('App\ProfissionalArea','profissional_id');
 	}
 
 	public function solicitacoesProfissional(){
-		return $this->hasMany('Talentos\ProfissionalSolicitacao','profissional_id');
+		return $this->hasMany('App\ProfissionalSolicitacao','profissional_id');
 	}*/
 
 	public function getDataInicio()

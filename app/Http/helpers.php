@@ -1,10 +1,10 @@
-<?php #namespace Talentos\Http;
+<?php #namespace App\Http;
 
-use Talentos\Area;
-use Talentos\ProfissionalArea;
-use Talentos\Profissional;
-use Talentos\VFaixaEtariaProfissional;
-use Talentos\VFaixaSalarialProfissional;
+use App\Area;
+use App\ProfissionalArea;
+use App\Profissional;
+use App\VFaixaEtariaProfissional;
+use App\VFaixaSalarialProfissional;
 
 class Charts {
 

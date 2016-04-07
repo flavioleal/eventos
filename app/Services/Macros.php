@@ -1,4 +1,4 @@
-<?php namespace Talentos\Services;
+<?php namespace App\Services;
 
 use Illuminate\Html\FormBuilder;
 

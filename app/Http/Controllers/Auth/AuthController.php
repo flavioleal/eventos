@@ -1,6 +1,6 @@
-<?php namespace Talentos\Http\Controllers\Auth;
+<?php namespace App\Http\Controllers\Auth;
 
-use Talentos\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
@@ -9,8 +9,8 @@ use Auth;
 use Route;
 use URL;
 use Illuminate\Http\RedirectResponse;
-use Talentos\Participantes;
-use Talentos\Role;
+use App\Participantes;
+use App\Role;
 
 class AuthController extends Controller {
 

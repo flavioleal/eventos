@@ -1,8 +1,8 @@
-<?php namespace Talentos\Http\Controllers\Admin;
+<?php namespace App\Http\Controllers\Admin;
 
-use Talentos\Eventos;
-use Talentos\Http\Controllers\Controller;
-use Talentos\Http\Requests;
+use App\Eventos;
+use App\Http\Controllers\Controller;
+use App\Http\Requests;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller

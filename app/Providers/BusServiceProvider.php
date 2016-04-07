@@ -1,4 +1,4 @@
-<?php namespace Talentos\Providers;
+<?php namespace App\Providers;
 
 use Illuminate\Bus\Dispatcher;
 use Illuminate\Support\ServiceProvider;
@@ -16,7 +16,7 @@ class BusServiceProvider extends ServiceProvider {
 		$dispatcher->mapUsing(function($command)
 		{
 			return Dispatcher::simpleMapping(
-				$command, 'Talentos\Commands', 'Talentos\Handlers\Commands'
+				$command, 'App\Commands', 'App\Handlers\Commands'
 			);
 		});
 	}

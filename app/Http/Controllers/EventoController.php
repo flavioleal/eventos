@@ -1,30 +1,30 @@
-<?php namespace Talentos\Http\Controllers;
+<?php namespace App\Http\Controllers;
 
-use Talentos\Http\Requests;
-use Talentos\Http\Requests\CampoCondicoesRequest;
+use App\Http\Requests;
+use App\Http\Requests\CampoCondicoesRequest;
 use Illuminate\Http\Request;
-use Talentos\Eventos;
-use Talentos\Organizadores;
-use Talentos\Contatos;
-use Talentos\EventoOrganizadores;
+use App\Eventos;
+use App\Organizadores;
+use App\Contatos;
+use App\EventoOrganizadores;
 
-use Talentos\EventoPerfis;
-use Talentos\EventoPerfilGrupos;
-use Talentos\CupomDescontos;
+use App\EventoPerfis;
+use App\EventoPerfilGrupos;
+use App\CupomDescontos;
 
-use Talentos\Campos;
-use Talentos\CampoAlternativas;
-use Talentos\CampoCondicoes;
-use Talentos\CampoTipos;
+use App\Campos;
+use App\CampoAlternativas;
+use App\CampoCondicoes;
+use App\CampoTipos;
 
-use Talentos\CamposModelos;
-use Talentos\CampoAlternativasModelos;
+use App\CamposModelos;
+use App\CampoAlternativasModelos;
 
-use Talentos\Arquivos;
+use App\Arquivos;
 
 use Response;
 use Session;
-use Talentos\Participantes;
+use App\Participantes;
 use View;
 use DB;
 use Jenssegers\Date\Date;

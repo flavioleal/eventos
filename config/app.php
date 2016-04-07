@@ -141,13 +141,13 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'Talentos\Providers\AppServiceProvider',
-		'Talentos\Providers\BusServiceProvider',
-		'Talentos\Providers\ConfigServiceProvider',
-		'Talentos\Providers\EventServiceProvider',
-		'Talentos\Providers\RouteServiceProvider',
-		'Talentos\Providers\MacroServiceProvider',
-		'Talentos\Providers\AttendeeServiceProvider'
+		'App\Providers\AppServiceProvider',
+		'App\Providers\BusServiceProvider',
+		'App\Providers\ConfigServiceProvider',
+		'App\Providers\EventServiceProvider',
+		'App\Providers\RouteServiceProvider',
+		'App\Providers\MacroServiceProvider',
+		'App\Providers\AttendeeServiceProvider'
 	],
 
 	/*
