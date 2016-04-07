@@ -432,8 +432,8 @@
 				$('.bootgrid tbody tr').each(function(){
 					var /*$td = $(this).find('td[data-column-id="id"]'),
 						slug = $(this).find('td[data-column-id="slug"]').text();*/
-						$td = $(this).first(),
-						slug = $(this).last().text();
+						$td = $(this).find('td').first().hide(),
+						slug = $(this).find('td').last().hide().text();
 
 					if ($td.hasClass('no-results')) {
 						return false;

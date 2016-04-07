@@ -53,8 +53,5 @@
     [data-column-id="id"], [data-column-id="slug"] {
         display: none !important;
     }
-    table tr > td:first-child, table tr > td:last-child {
-        display: none;
-    }
 </style>
 @endsection
