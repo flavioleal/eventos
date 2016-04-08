@@ -2,6 +2,7 @@
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use App\Exceptions\SymfonyDisplayer;
 
 class Handler extends ExceptionHandler {
 
@@ -28,7 +29,7 @@ class Handler extends ExceptionHandler {
 	}
 
 	/**
-	 * Render an exception into an HTTP response.
+	 * Render an exception into a response.
 	 *
 	 * @param  \Illuminate\Http\Request  $request
 	 * @param  \Exception  $e
@@ -42,7 +43,7 @@ class Handler extends ExceptionHandler {
 		}
 		else
 		{
-			return parent::render($request, $e);
+			return (new SymfonyDisplayer(config('app.debug')))->createResponse($e);
 		}
 	}
 
