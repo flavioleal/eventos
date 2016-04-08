@@ -91,11 +91,12 @@
                     <a href="#" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
                     <a href="#" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
                 </div>
-                <h4 class="panel-title">Edição de Eventos</h4>
+                <h4 class="panel-title">Pré-visualização</h4>
             </div>
             <div class="panel-body">
                 <iframe id="preview-event" style="border: 0; width:100%; min-height: 400px;"
-                        src="{{ route('site.evento', ['slug' => $form['slug']]) }}"></iframe>
+                        src="@if (isset($form['slug'])) {{ route('site.evento', ['slug' => $form['slug']])  }} @endif">
+                </iframe>
             </div>
         </div>
     </div>

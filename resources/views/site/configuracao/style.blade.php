@@ -7,6 +7,7 @@
         color: {{ $evento->cor_texto }} !important;
     }
 
+    @if (!empty($evento->cor_predominante))
     .wizard-card.ct-wizard-orange .nav-pills > li.active a{
         background-color: {{ $evento->cor_predominante }} !important;
     }
@@ -40,6 +41,7 @@
     .pagina-interna-conteudo > h3{
         color: {{ $evento->cor_predominante }};
     }
+    @endif
 
     .pagina-interna-conteudo .conteudo-entrada > p,
     .pagina-interna-conteudo .conteudo-entrada > span{
@@ -48,9 +50,15 @@
         color: {{ $evento->cor_texto }} !important;
     }
 
+    @if (!empty($evento->banner_arquivo_id))
     .pagina-interna-topo .container:after {
         top: 302px;
     }
+    @else
+    .pagina-interna-topo .container:after {
+        top: 40px;
+    }
+    @endif
 
     .rodape{
         margin-top: 0px;
@@ -213,10 +221,12 @@
           }
     }
 
+    @if (!empty($evento->banner_arquivo_id))
     .pagina-interna-topo {
         background-size: cover;
         height: 300px;
         background-image: url('{{ route('evento.fileShow', ['id' => $evento->banner_arquivo_id,'tipo' => 'banner','ext' => $evento->banner_extensao]) }}');
         background-color: {{ $evento->cor_predominante }} !important;
     }
+    @endif
 </style>

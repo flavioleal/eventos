@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Session;
 use App\CampoAlternativas;
 use App\Role;
 use App\User;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use View;
 use Symfony\Component\HttpFoundation\Response;
 use App\Campos;
@@ -65,7 +66,11 @@ class HomeController extends Controller
 	public function evento(Request $request, $slug)
 	{
 		$evento = $this->getEventoBySlug($slug);
-		return view('site.home')->with('evento', $evento[0]);
+		if (isset($evento[0])) {
+			return view('site.home')->with('evento', $evento[0]);
+		} else {
+			throw new NotFoundHttpException('Não foi possível encontrar a página.');
+		}
 	}
 
 	private function getCondicoesByEventoId($id)

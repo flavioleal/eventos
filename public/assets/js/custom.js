@@ -306,6 +306,7 @@ $(document).ready(function(){
 
     $('form#form-evento').on('saved',function(event,data){
         $('.btn-acessar-evento').attr('href', ENDERECO + '/evento/' + data.slug);
+        $('iframe#preview-event').attr('src', ENDERECO + '/evento/' + data.slug);
     });
 
 	//FORMULÁRIO DE DADOS PRINCIPAIS DO EVENTOS

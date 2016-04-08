@@ -22,7 +22,21 @@
 				<div class="col-xs-12 compumake-contato">
 					<div class="row">
 						<div class="col-md-12">
-							<a href="{{ url() }}/evento/{{ $evento->slug }}"><img style="max-height: 80px; margin: 20px 0;" class="img-responsive pull-left" src="{{ route('evento.fileShow', ['id' => $evento->logo_arquivo_id,'tipo' => 'logo','ext' => $evento->logo_extensao]) }}"/></a>
+							<a href="{{ url() }}/evento/{{ $evento->slug }}">
+								<img style="max-height: 80px; margin: 20px 0;" class="img-responsive pull-left"
+									 @if (!empty($evento->logo_arquivo_id))
+									 src="{{ route('evento.fileShow',
+									 			[	'id' => $evento->logo_arquivo_id,
+													'tipo' => 'logo',
+													'ext' => $evento->logo_extensao
+												]
+											)
+										}}"
+									 @else
+									 src="/img/compumake-logo.png"
+									 @endif
+								/>
+							</a>
 							<h1 style="line-height: 90px; text-align: right;">{{ $evento->titulo }}</h1>
 						</div>
 					</div>
