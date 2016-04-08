@@ -63,16 +63,22 @@
         }
         var $loader = $('.loader-css').clone();
         $(document).ready(function(){
-            var request;
+            var request, $perfil;
+
             $('form.form-evento-participante').on('submit', function(e){
                 e.preventDefault();
-                var $perfil = $('[name="field-perfil"]:checked').clone(),
-                    $id = $('[name="id"]').clone();
+                $campoPerfil = $('[name="campo-perfil"]');
 
+                if ($campoPerfil.length == 1) {
+                    $perfil = $campoPerfil.clone();
+                } else {
+                    $perfil = $('[name="campo-perfil"]:checked').clone()
+                }
+                $id = $('[name="id"]').clone();
                 $finish = 0;
                 if ($('li[data-perfil]:visible:last').hasClass('active')) {
                     if ($(this).find('[name="finish"]').length == 0) {
-                        $finish = $('<input/>').attr("name", "finish").val(1);
+                        $finish = $('<input/>').attr({"name": "finish", "type": "hidden"}).val(1);
                         $finish.appendTo($(this));
                     } else {
                         $(this).find('[name="finish"]').val(0);
@@ -107,23 +113,23 @@
                 $('.wizard-card').data('bootstrapWizard').resetWizard();
             });
 
-            $('.field-datetime').datepicker({
+            $('.campo-datetime').datepicker({
                 language: "pt-BR",
                 autoclose: true,
                 format: "dd/mm/yyyy"
             });
-            $('.field-datetime').mask('00/00/0000');
-            $('.field-money').mask('000.000.000.000.000,00', {reverse: true});
-            $('.field-cpf, .cpf').mask('000.000.000-00', {reverse: true});
-            $('.field-cnpj, .cnpj').mask('00.000.000/0000-00', {reverse: true});
+            $('.campo-datetime').mask('00/00/0000');
+            $('.campo-money').mask('000.000.000.000.000,00', {reverse: true});
+            $('.campo-cpf, .cpf').mask('000.000.000-00', {reverse: true});
+            $('.campo-cnpj, .cnpj').mask('00.000.000/0000-00', {reverse: true});
             $('.cep').mask('00000-000');
 
             var SPMaskBehavior = function (val) {
                         return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
                     },
                     spOptions = {
-                        onKeyPress: function(val, e, field, options) {
-                            field.mask(SPMaskBehavior.apply({}, arguments), options);
+                        onKeyPress: function(val, e, campo, options) {
+                            campo.mask(SPMaskBehavior.apply({}, arguments), options);
                         }
                     };
 
@@ -139,12 +145,12 @@
                     var val = '$("[data-campo='+ v.dependente_campo_id +']").val()';
 
                     v.valor = "'" + v.valor + "'";
-                    if ($('[data-campo='+ v.dependente_campo_id +']').hasClass('field-datetime')) {
+                    if ($('[data-campo='+ v.dependente_campo_id +']').hasClass('campo-datetime')) {
                         val = '$("[data-campo='+ v.dependente_campo_id +']").datepicker("getDate")';
                         v.valor = "stringToDate("+ v.valor +")";
                     }
 
-                    if ($('[data-campo='+ v.dependente_campo_id +']').hasClass('field-money')) {
+                    if ($('[data-campo='+ v.dependente_campo_id +']').hasClass('campo-money')) {
                         val += ".replace(/\\./g, '').replace(/,/, '.')";
                         val = "parseFloat("+ val +")";
                     }

@@ -13,11 +13,6 @@
                         Chave de acesso: <strong>{{ $participante->chave }}</strong></p>
                     <p class="text-muted">
                         Essa é uma confirmação da pré-inscrição no <strong>{{ $evento->titulo }}</strong>. <br>
-                        @if ($perfil->exigir_pagamento == 1 && $perfil->valor > 0)
-                            Após o pagamento, será enviado ao seu e-mail o comprovante de inscrição.
-                        @else
-                            O comprovante de inscrição foi enviado para o seu e-mail.
-                        @endif
                     </p>
                 </div>
             </div>
@@ -27,6 +22,7 @@
                     <h4>Perfil de Inscrição</h4>
                     <p>{{ $perfil->titulo }}</p>
                 </div>
+                @if (!empty($evento->local) || !empty($evento->logradouro))
                 <div class="col-md-4">
                     <h4>Local do evento</h4>
                     <p>
@@ -35,6 +31,7 @@
                         {{ $evento->bairro }} - {{ $evento->municipio }} / {{ $evento->uf }}
                     </p>
                 </div>
+                @endif
                 <div class="col-md-4">
                     <h4>Horário</h4>
                     <p>

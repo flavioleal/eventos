@@ -413,7 +413,7 @@
 			ENDERECO = '{{ url() }}',
 			URL = {
 				Evento: {
-					create: "{{ action('EventoController@create') }}"
+					create: "{{ action('Admin\EventoController@create') }}"
 				}
 			},
 			CSRFTOKEN = '{!! csrf_token() !!}';

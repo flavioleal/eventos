@@ -1,5 +1,6 @@
-<?php namespace App\Http\Controllers;
+<?php namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use App\Http\Requests\CampoCondicoesRequest;
 use Illuminate\Http\Request;
@@ -68,7 +69,7 @@ class EventoController extends Controller
 				'total' => $eventos->count()
 			]);
 		}
-		return view('evento.showAll');
+		return view('admin.event.showAll');
 	}
 
 	public function create($id = NULL)
@@ -168,7 +169,7 @@ class EventoController extends Controller
 			'evento_perfil' => $evento_perfil
 		];
 
-		return view('evento.create',$view);
+		return view('admin.event.create',$view);
 	}
 
 	public function store(Request $request)
@@ -378,7 +379,7 @@ class EventoController extends Controller
         return Response::json( $response );
 	}
 
-	public function perfil_campos_store(Request $request)
+	public function storePerfilFields(Request $request)
     {
 		$input = $request->all();
 

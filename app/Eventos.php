@@ -38,17 +38,32 @@ class Eventos extends Model {
 		'credencial_html'
 	];
 
-	/*public function profissionalArea(){
-		return $this->belongsToMany('App\Area','profissional_areas','profissional_id','area_id');
+	public function addHttp($url)
+	{
+		if (strpos($url, 'http://') === false) {
+			return "http://" . $url;
+		}
+		return $url;
 	}
 
-	public function areasProfissional(){
-		return $this->hasMany('App\ProfissionalArea','profissional_id');
+	public function getFacebook()
+	{
+		$this->facebook = $this->addHttp($this->facebook);
+		return $this->facebook;
 	}
 
-	public function solicitacoesProfissional(){
-		return $this->hasMany('App\ProfissionalSolicitacao','profissional_id');
-	}*/
+	public function getYoutube()
+	{
+		$this->youtube = $this->addHttp($this->youtube);
+		return $this->youtube;
+	}
+
+	public function getTwitter()
+	{
+		$this->twitter = $this->addHttp($this->twitter);
+		return $this->twitter;
+	}
+
 
 	public function getDataInicio()
 	{

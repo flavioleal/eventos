@@ -10,7 +10,7 @@ $(document).ready(function(){
 
         data += (evento_id != '') ? '&evento_id='+evento_id : '';
 
-        $form.trigger('xhr',{fields:data});
+        $form.trigger('xhr',{campos:data});
     });
 
     //FORMULÁRIO DESCONTOS E GRUPOS DO PERFIL
@@ -26,7 +26,7 @@ $(document).ready(function(){
         data += (evento_id != '') ? '&evento_id='+evento_id : '';
         data += (evento_perfil_id != '') ? '&id='+evento_perfil_id : '';
 
-        $form.trigger('xhr',{fields:data});
+        $form.trigger('xhr',{campos:data});
     });
     
     
@@ -41,7 +41,7 @@ $(document).ready(function(){
 
         data += (evento_perfil_id != '') ? '&evento_perfil_id='+evento_perfil_id : '';
 
-        $form.trigger('xhr',{fields:data});
+        $form.trigger('xhr',{campos:data});
     });
     
     //evento perfil - adiciona cupom de descontos
@@ -89,7 +89,8 @@ $(document).ready(function(){
             $linha.append('<td>'+
                             '<a href="#Configurar-Perfil" data-target="#modal-perfil" class="btn btn-default fa fa-cog" data-toggle="tooltip" data-placement="top" title="Configurar Perfil"></a>'+
                             '<a href="#Gerenciar-Campos" data-target="#modal-perguntas" class="btn btn-default fa fa-pencil-square-o" data-toggle="tooltip" data-placement="top" title="Gerenciar Campos"></a>'+
-                            '<a href="#Remover-Perfil" class="btn btn-default fa fa-trash-o grid-xhr-destroy" data-url="'+url_destroy+'" data-toggle="tooltip" data-placement="top" title="Remover Perfil"></a>'+
+                            '<a href="#Remover-Perfil" class="btn btn-default fa fa-trash-o grid-xhr-destroy" ' +
+                                'data-url="'+url_destroy+'" data-toggle="tooltip" data-placement="top" title="Remover Perfil"></a>'+
                         '</td>');
 
             $('.grid-evento-perfis tbody tr.nenhum-item').remove();
@@ -157,5 +158,9 @@ $(document).ready(function(){
             Notificar.erro('Não foi possível prosseguir! Tente novamente mais tarde.');
         }).always(function(){
         });
+    });
+
+    $('#modal-perfil').on('hidden.bs.modal', function (e) {
+        $(this).find('[name="id"]').val('');
     });
 });

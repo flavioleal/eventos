@@ -11,7 +11,7 @@ $(document).ready(function(){
 			data += (alt != '') ? '&campo_alternativa[]='+alt : '';
 	    });
 
-	    $form.trigger('xhr',{fields:data});
+	    $form.trigger('xhr',{campos:data});
 	});
 
 	//evento perfil - adiciona cupom de descontos
@@ -268,7 +268,7 @@ $(document).ready(function(){
     	var campo = $('form#perfil-campos [name="campo"]').val(),
             id = $('form#perfil-campos [name="id"]').val();
 
-        $('fieldset#adicionar-condicao legend').html('Condições: '+campo);
+        $('camposet#adicionar-condicao legend').html('Condições: '+campo);
         $('form#campo-condicoes [name="campo_id"]').val(id);
 
     });
@@ -279,7 +279,7 @@ $(document).ready(function(){
         var $form = $(this),
             data = $form.serialize();
 
-        $form.trigger('xhr',{fields:data});
+        $form.trigger('xhr',{campos:data});
     });
     
     $('form#campo-condicoes').on('saved',function(event,data){

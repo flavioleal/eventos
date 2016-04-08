@@ -59,9 +59,10 @@
 			<div class="col-md-6 compumake-footer-social col-sm-6">
 				<div class="pull-right text-right">
 					<div class="compumake-social">
-						<a href="https://www.facebook.com/Compumake-Consultoria-em-RH-178168332216922/" target="_blank" class="compumake-facebook"></a>
-						<a href="https://www.youtube.com/user/Compumakeconsult" target="_blank" class="compumake-youtube"></a>
-						<a href="https://twitter.com/compumake_consult" target="_blank" class="compumake-twitter"></a>
+						<a href="{{ $evento->getFacebook() }}"
+						   target="_blank" class="compumake-facebook"></a>
+						<a href="{{ $evento->getYoutube() }}" target="_blank" class="compumake-youtube"></a>
+						<a href="{{ $evento->getTwitter() }}" target="_blank" class="compumake-twitter"></a>
 					</div>
 					<p class="direitos-reservados">
 						<span>© 2015 / Compumake Locação de Computadores</span><br>

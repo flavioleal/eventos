@@ -152,8 +152,13 @@ class HomeController extends Controller
 			->join('evento_perfil_grupos', function($join) {
 				$join->on('evento_perfil_grupos.evento_perfil_id', '=', 'evento_perfis.id');
 			})
-			->orderBy('evento_perfil_grupos.ordem')
+			->whereExists(function ($query) {
+				$query->select(DB::raw(1))
+					->from('campos')
+					->whereRaw('campos.evento_perfil_id = evento_perfis.id');
+			})
 			->where('eventos.id', '=', $id)
+			->orderBy('evento_perfil_grupos.ordem')
 			->get();
 	}
 
@@ -604,7 +609,7 @@ class HomeController extends Controller
 			$participante = Participantes::create(
 				[
 					'contato_id' => $contato->id,
-					'evento_perfil_id' => $input['field-perfil']
+					'evento_perfil_id' => $input['campo-perfil']
 				]
 			);
 
@@ -612,11 +617,11 @@ class HomeController extends Controller
 				return false;
 			}
 
-			if (!isset($input['field'])) {
+			if (!isset($input['campo'])) {
 				return $participante;
 			}
 
-			foreach ($input['field'] as $campo => $valor) {
+			foreach ($input['campo'] as $campo => $valor) {
 				$campo_id = explode('-', $campo);
 				$campo = ParticipanteCampos::create(
 					[
@@ -641,12 +646,12 @@ class HomeController extends Controller
 		} else {
 			$participante = Participantes::find($input['id']);
 
-			if (!isset($input['field'])) {
+			if (!isset($input['campo'])) {
 				return $participante;
 			}
 
-			if ($participante->evento_perfil_id != $input['field-perfil']) {
-				$participante->evento_perfil_id = $input['field-perfil'];
+			if (isset($input['campo-perfil']) && $participante->evento_perfil_id != $input['campo-perfil']) {
+				$participante->evento_perfil_id = $input['campo-perfil'];
 				Participantes::find($participante->id)
 					->update([
 						'evento_perfil_id' => $participante->evento_perfil_id
@@ -654,7 +659,7 @@ class HomeController extends Controller
 			}
 
 			$participanteCampos = [];
-			foreach ($input['field'] as $campo => $valor) {
+			foreach ($input['campo'] as $campo => $valor) {
 				$campo_id = explode('-', $campo);
 				$participanteCampo = ParticipanteCampos::where('participante_id', $participante->id)
 					->where('campo_id', $campo_id[1])->get()->toArray();

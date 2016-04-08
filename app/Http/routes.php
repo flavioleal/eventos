@@ -120,11 +120,6 @@ Route::controllers([
    'password' => 'Auth\PasswordController',
 ]);
 
-Route::group(['prefix'=>'usuario'],function(){
-	Route::post('store',['as'=>'usuario.store','uses'=>'UsuarioController@store']);
-});
-
-
 #Eventos
 ##Listar todas as áreas
 ##Metódo de inserção
@@ -133,7 +128,7 @@ Route::get(
 	[
 		'as'=>'admin.evento',
 		'where'=>['id'=>'[0-9]+'],
-		'uses'=>'EventoController@create',
+		'uses'=>'Admin\EventoController@create',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -143,7 +138,7 @@ Route::post(
 	'admin/evento/store',
 	[
 		'as'=>'evento.store',
-		'uses'=>'EventoController@store',
+		'uses'=>'Admin\EventoController@store',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -153,7 +148,7 @@ Route::post(
 	'admin/evento/design-store',
 	[
 		'as'=>'evento.designStore',
-		'uses'=>'EventoController@designStore',
+		'uses'=>'Admin\EventoController@designStore',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -164,7 +159,7 @@ Route::post(
 	'admin/evento/perfil-store',
 	[
 		'as'=>'evento.perfil_store',
-		'uses'=>'EventoController@perfil_store',
+		'uses'=>'Admin\EventoController@perfil_store',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -174,7 +169,7 @@ Route::post(
 	'admin/evento/perfil-campos-store',
 	[
 		'as'=>'evento.perfil_campos_store',
-		'uses'=>'EventoController@perfil_campos_store',
+		'uses'=>'Admin\EventoController@storePerfilFields',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -184,7 +179,7 @@ Route::post(
 	'admin/evento/perfil-grupos-store',
 	[
 		'as'=>'evento.perfil_grupos_store',
-		'uses'=>'EventoController@perfil_grupos_store',
+		'uses'=>'Admin\EventoController@perfil_grupos_store',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -194,7 +189,7 @@ Route::post(
 	'admin/evento/grupo-campos-destroy',
 	[
 		'as'=>'evento.grupo_campos_destroy',
-		'uses'=>'EventoController@grupoCamposDestroy',
+		'uses'=>'Admin\EventoController@grupoCamposDestroy',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -204,7 +199,7 @@ Route::post(
 	'admin/evento/grupo-campos-store',
 	[
 		'as'=>'evento.grupo_campos_store',
-		'uses'=>'EventoController@grupoCamposStore',
+		'uses'=>'Admin\EventoController@grupoCamposStore',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -214,7 +209,7 @@ Route::post(
 	'admin/evento/grupo-campos-order',
 	[
 		'as'=>'evento.grupo_campos_order',
-		'uses'=>'EventoController@grupoCamposOrder',
+		'uses'=>'Admin\EventoController@grupoCamposOrder',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -224,7 +219,7 @@ Route::post(
 	'admin/evento/perfil-desconto-store',
 	[
 		'as'=>'evento.perfil_desconto_store',
-		'uses'=>'EventoController@perfil_desconto_store',
+		'uses'=>'Admin\EventoController@perfil_desconto_store',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -236,7 +231,7 @@ Route::post(
 	[
 		'as'=>'evento.perfil_desconto_destroy',
 		'where'=>['id'=>'[0-9]+'],
-		'uses'=>'EventoController@perfil_desconto_destroy',
+		'uses'=>'Admin\EventoController@perfil_desconto_destroy',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -246,7 +241,7 @@ Route::post(
 	'admin/evento/perfil-cupom-store',
 	[
 		'as'=>'evento.perfil_cupom_store',
-		'uses'=>'EventoController@perfil_cupom_store',
+		'uses'=>'Admin\EventoController@perfil_cupom_store',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -256,7 +251,7 @@ Route::post(
 	'admin/evento/campo-condicoes-store',
 	[
 		'as'=>'evento.campo_condicoes_store',
-		'uses'=>'EventoController@campo_condicoes_store',
+		'uses'=>'Admin\EventoController@campo_condicoes_store',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -267,7 +262,7 @@ Route::post(
 	[
 		'as'=>'evento.campo_condicoes_destroy',
 		'where'=>['id'=>'[0-9]+'],
-		'uses'=>'EventoController@campo_condicoes_destroy',
+		'uses'=>'Admin\EventoController@campo_condicoes_destroy',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -277,7 +272,7 @@ Route::post(
 	'admin/evento/perfil-edit/{id}',
 	[
 		'as'=>'evento.perfil_edit',
-		'uses'=>'EventoController@perfil_edit',
+		'uses'=>'Admin\EventoController@perfil_edit',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -287,7 +282,7 @@ Route::post(
 	'admin/evento/perfil-campo-edit/{id}',
 	[
 		'as'=>'evento.perfil_campo_edit',
-		'uses'=>'EventoController@perfil_campo_edit',
+		'uses'=>'Admin\EventoController@perfil_campo_edit',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -297,7 +292,7 @@ Route::post(
 	'admin/evento/perfil-campos-list/{id}',
 	[
 		'as'=>'evento.perfil_campos_list',
-		'uses'=>'EventoController@perfil_campos_list',
+		'uses'=>'Admin\EventoController@perfil_campos_list',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -307,7 +302,7 @@ Route::post(
 	'admin/evento/perfil-campo-destroy/{id}',
 	[
 		'as'=>'evento.perfil_campo_destroy',
-		'uses'=>'EventoController@perfil_campo_destroy',
+		'uses'=>'Admin\EventoController@perfil_campo_destroy',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -317,7 +312,7 @@ Route::post(
 	'admin/evento/perfil-campos-select/{id}',
 	[
 		'as'=>'evento.perfil_campos_select',
-		'uses'=>'EventoController@perfil_campos_select',
+		'uses'=>'Admin\EventoController@perfil_campos_select',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -327,7 +322,7 @@ Route::post(
 	'admin/evento/campos-modelos-select',
 	[
 		'as'=>'evento.campos_modelos_select',
-		'uses'=>'EventoController@campos_modelos_select',
+		'uses'=>'Admin\EventoController@campos_modelos_select',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -337,7 +332,7 @@ Route::post(
 	'admin/evento/campos-modelos-store',
 	[
 		'as'=>'evento.campos_modelos_sotre',
-		'uses'=>'EventoController@campos_modelos_store',
+		'uses'=>'Admin\EventoController@campos_modelos_store',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -348,7 +343,7 @@ Route::post(
 	[
 		'as'=>'evento.perfil_destroy',
 		'where'=>['id'=>'[0-9]+'],
-		'uses'=>'EventoController@perfil_destroy',
+		'uses'=>'Admin\EventoController@perfil_destroy',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -358,7 +353,7 @@ Route::post(
 	'admin/evento/upload',
 	[
 		'as'=>'evento.fileUpload',
-		'uses'=>'EventoController@fileUpload',
+		'uses'=>'Admin\EventoController@fileUpload',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -368,7 +363,7 @@ Route::post(
 	'admin/evento/remover-arquivo',
 	[
 		'as'=>'evento.fileDestroy',
-		'uses'=>'EventoController@fileDestroy',
+		'uses'=>'Admin\EventoController@fileDestroy',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -386,7 +381,7 @@ Route::post(
 	'admin/evento/ordenar-campos',
 	[
 		'as'=>'evento.ordenar_campos',
-		'uses'=>'EventoController@ordenar_campos',
+		'uses'=>'Admin\EventoController@ordenar_campos',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -396,7 +391,7 @@ Route::post(
 	'admin/evento/ordenar-campo-alternativas',
 	[
 		'as'=>'evento.ordenar_campo_alternativas',
-		'uses'=>'EventoController@ordenar_campo_alternativas',
+		'uses'=>'Admin\EventoController@ordenar_campo_alternativas',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]
@@ -426,7 +421,7 @@ Route::any(
 	'admin/lista-de-eventos',
 	[
 		'as'=>'evento.showAll',
-		'uses'=>'EventoController@showAll',
+		'uses'=>'Admin\EventoController@showAll',
 		'middleware' => ['auth', 'roles'],
 		'roles' => ['Master','Administrador','Gerência']
 	]

@@ -230,7 +230,7 @@ $(document).ready(function(){
             url: $form.attr('action'),
             type:'POST',
             dataType:'json',
-            data: data.fields
+            data: data.campos
         }).done(function(retorno){
             if(retorno.status == 1){
                 Notificar.sucesso(retorno.mensagem);
@@ -322,19 +322,20 @@ $(document).ready(function(){
             tinyMCE.triggerSave();
         }
         var data = $form.serialize();
-        $form.trigger('xhr',{fields:data});
+        $form.trigger('xhr',{campos:data});
     });
     //FORMULÁRIO DE DADOS PRINCIPAIS DO EVENTOS
+    console.log($('form#form-evento-design'));
     $('form#form-evento-design').on('submit',function(e){
         e.preventDefault();
         var evento_id = $('form#form-evento [name="id"]').val(),
             $form = $(this);
-
         $form.find('[name="id"]').val(evento_id);
 
-        if (false === $form.parsley().validate("wizard-step-3"))
+        if (false === $form.parsley().validate("wizard-step-3")) {
+            console.log('here');
             return false;
-
-        $form.trigger('xhr',{fields: $form.serialize()});
+        }
+        $form.trigger('xhr',{campos: $form.serialize()});
     });
 });

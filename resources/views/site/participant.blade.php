@@ -96,10 +96,10 @@
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="radio">
-                                                    <label for="field-perfil-{{ $perfil->id  }}">
-                                                        <input  name="field-perfil"
+                                                    <label for="campo-perfil-{{ $perfil->id  }}">
+                                                        <input  name="campo-perfil"
                                                                 type="radio"
-                                                                id="field-perfil-{{ $perfil->id  }}"
+                                                                id="campo-perfil-{{ $perfil->id  }}"
                                                                 value="{{ $perfil->id }}"
                                                         @if ($participante->evento_perfil_id == $perfil->id)
                                                             checked="checked"
@@ -122,8 +122,6 @@
                         @endforeach
                         </div>
                     </div>
-                    @else
-                    <!--<input  name="field-perfil" type="hidden" value="{{ $perfil[0]->id }}">-->
                     @endif
                     <input type="hidden" name="id" value="{{ $participante->id }}" />
                     @foreach ($grupos as $grupo)
@@ -145,14 +143,14 @@
                                         @if (is_array($temp)) data-condicao="1" @endif
                                     >
                                         @if (is_array($temp)) <span class="hide data-condicao">{!! json_encode($temp) !!}</span> @endif
-                                        <label for="field-{{ $campo->id  }}" class="@if ($campo->obrigatorio) requerido @endif">{{ $campo->campo }}</label>
+                                        <label for="campo-{{ $campo->id  }}" class="@if ($campo->obrigatorio) requerido @endif">{{ $campo->campo }}</label>
                                         <!-- 1 - Campo aberto - texto -->
                                         @if ($campo->campo_tipo_id == 1)
                                             @if ($campo->autocomplete == 1)
                                             <div class="input-group">
                                             @endif
                                                 <input
-                                                    id = "field-{{ $campo->id  }}"
+                                                    id = "campo-{{ $campo->id  }}"
                                                     data-campo="{{ $campo->id }}"
                                                     data-autocomplete="{{ $campo->autocomplete }}"
                                                     @if ($campo->obrigatorio == 1)
@@ -160,8 +158,8 @@
                                                     data-required="required"
                                                     @endif
                                                     data-classe="{{ $campo->classe }}"
-                                                    class="field-text form-control {{ $campo->classe  }}"
-                                                    name="field[text-{{ $campo->id  }}]"
+                                                    class="campo-text form-control {{ $campo->classe  }}"
+                                                    name="campo[text-{{ $campo->id  }}]"
                                                     value="{{ $campo->resposta }}"
                                                     @if (!empty($campo->mascara)) data-mascara="{{ $campo->mascara }}" @endif
                                                     type="text"
@@ -181,12 +179,12 @@
                                         <!-- 2 - Campo aberto - número -->
                                         @if ($campo->campo_tipo_id == 2)
                                             <input
-                                                id = "field-{{ $campo->id  }}"
+                                                id = "campo-{{ $campo->id  }}"
                                                 data-campo="{{ $campo->id }}"
                                                 data-autocomplete="{{ $campo->autocomplete }}"
                                                 @if ($campo->obrigatorio) required @endif
-                                                class="field-number form-control {{ $campo->classe  }}"
-                                                name="field[number-{{ $campo->id  }}]"
+                                                class="campo-number form-control {{ $campo->classe  }}"
+                                                name="campo[number-{{ $campo->id  }}]"
                                                 value="{{ $campo->resposta }}"
                                                 @if (!empty($campo->mascara)) data-mascara="{{ $campo->mascara }}" @endif
                                                 type="number"
@@ -197,12 +195,12 @@
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                                                 <input
-                                                    id = "field-{{ $campo->id  }}"
+                                                    id = "campo-{{ $campo->id  }}"
                                                     data-campo="{{ $campo->id }}"
                                                     data-autocomplete="{{ $campo->autocomplete }}"
                                                     @if ($campo->obrigatorio) required @endif
-                                                    class="field-datetime form-control {{ $campo->classe  }}"
-                                                    name="field[date-{{ $campo->id  }}]"
+                                                    class="campo-datetime form-control {{ $campo->classe  }}"
+                                                    name="campo[date-{{ $campo->id  }}]"
                                                     value="{{ $campo->resposta }}"
                                                     @if (!empty($campo->mascara)) data-mascara="{{ $campo->mascara }}" @endif
                                                     type="text"
@@ -214,12 +212,12 @@
                                             <div class="input-group">
                                                 <span class="input-group-addon">R$</span>
                                                 <input
-                                                    id = "field-{{ $campo->id  }}"
+                                                    id = "campo-{{ $campo->id  }}"
                                                     data-campo="{{ $campo->id }}"
                                                     data-autocomplete="{{ $campo->autocomplete }}"
                                                     @if ($campo->obrigatorio) required @endif
-                                                    class="field-money form-control {{ $campo->classe  }}"
-                                                    name="field[money-{{ $campo->id  }}]"
+                                                    class="campo-money form-control {{ $campo->classe  }}"
+                                                    name="campo[money-{{ $campo->id  }}]"
                                                     value="{{ $campo->resposta }}"
                                                     @if (!empty($campo->mascara)) data-mascara="{{ $campo->mascara }}" @endif
                                                     type="text"
@@ -229,12 +227,12 @@
                                         <!-- 5 - Texto -->
                                         @if ($campo->campo_tipo_id == 5)
                                             <textarea
-                                                id = "field-{{ $campo->id  }}"
+                                                id = "campo-{{ $campo->id  }}"
                                                 data-campo="{{ $campo->id }}"
                                                 data-autocomplete="{{ $campo->autocomplete }}"
                                                 @if ($campo->obrigatorio) required @endif
-                                                class="field-longtext form-control {{ $campo->classe  }}"
-                                                name="field[textarea-{{ $campo->id  }}]"
+                                                class="campo-longtext form-control {{ $campo->classe  }}"
+                                                name="campo[textarea-{{ $campo->id  }}]"
                                                 @if (!empty($campo->mascara)) data-mascara="{{ $campo->mascara }}" @endif
                                             >{{ $campo->resposta }}</textarea>
                                         @endif
@@ -244,15 +242,15 @@
                                             @foreach ($alternativas as $alternativa)
                                                 @if($alternativa->campo_id == $campo->id)
                                                     <div class="checkbox">
-                                                        <label for="field-{{ $campo->id  }}-{{ $alternativa->id }}">
+                                                        <label for="campo-{{ $campo->id  }}-{{ $alternativa->id }}">
                                                             <input
-                                                                id = "field-{{ $campo->id  }}"
+                                                                id = "campo-{{ $campo->id  }}"
                                                                 data-campo="{{ $campo->id }}"
                                                                 data-autocomplete="{{ $campo->autocomplete }}"
-                                                                id="field-{{ $campo->id  }}-{{ $alternativa->id }}"
+                                                                id="campo-{{ $campo->id  }}-{{ $alternativa->id }}"
                                                                 @if ($campo->obrigatorio) required @endif
-                                                                class="field-checkbox {{ $campo->classe  }}"
-                                                                name="field[checkbox-{{ $campo->id }}][{{ $alternativa->id  }}]"
+                                                                class="campo-checkbox {{ $campo->classe  }}"
+                                                                name="campo[checkbox-{{ $campo->id }}][{{ $alternativa->id  }}]"
                                                                 type="checkbox"
                                                                 data-type="{{ $alternativa->checked }}"
                                                                 @if (!empty($alternativa->checked))
@@ -270,16 +268,16 @@
                                             @foreach ($alternativas as $alternativa)
                                                 @if($alternativa->campo_id == $campo->id)
                                                 <div class="radio">
-                                                    <label for="field-{{ $campo->id  }}-{{ $alternativa->id }}">
+                                                    <label for="campo-{{ $campo->id  }}-{{ $alternativa->id }}">
                                                         <input
-                                                        id = "field-{{ $campo->id  }}"
+                                                        id = "campo-{{ $campo->id  }}"
                                                         data-campo="{{ $campo->id }}"
                                                         data-autocomplete="{{ $campo->autocomplete }}"
-                                                        id="field-{{ $campo->id  }}-{{ $alternativa->id }}"
+                                                        id="campo-{{ $campo->id  }}-{{ $alternativa->id }}"
                                                         @if ($campo->obrigatorio) required @endif
-                                                        class="field-radio {{ $campo->classe  }}"
+                                                        class="campo-radio {{ $campo->classe  }}"
                                                         type="radio"
-                                                        name="field[radio-{{ $campo->id  }}]"
+                                                        name="campo[radio-{{ $campo->id  }}]"
                                                         value="{{ $alternativa->alternativa }}"
                                                         @if ($alternativa->alternativa == $campo->resposta)
                                                         checked="checked"
@@ -294,12 +292,12 @@
                                         <!-- 8 - Caixa de seleção -->
                                         @if ($campo->campo_tipo_id == 8)
                                             <select
-                                                id = "field-{{ $campo->id  }}"
+                                                id = "campo-{{ $campo->id  }}"
                                                 data-campo="{{ $campo->id }}"
                                                 data-autocomplete="{{ $campo->autocomplete }}"
                                                 @if ($campo->obrigatorio) required @endif
-                                                class="field-select {{ $campo->classe  }} form-control"
-                                                name="field[select-{{ $campo->id  }}]">
+                                                class="campo-select {{ $campo->classe  }} form-control"
+                                                name="campo[select-{{ $campo->id  }}]">
                                                     <option value=""></option>
                                                 @foreach ($alternativas as $alternativa)
                                                     @if($alternativa->campo_id == $campo->id)
@@ -314,12 +312,12 @@
                                         <!-- 9 - Arquivo -->
                                         @if ($campo->campo_tipo_id == 9)
                                             <input
-                                                id = "field-{{ $campo->id  }}"
+                                                id = "campo-{{ $campo->id  }}"
                                                 data-campo="{{ $campo->id }}"
                                                 data-autocomplete="{{ $campo->autocomplete }}"
                                                 @if ($campo->obrigatorio) required @endif
-                                                class="field-file form-control {{ $campo->classe  }}"
-                                                name="field[file-{{ $campo->id  }}]"
+                                                class="campo-file form-control {{ $campo->classe  }}"
+                                                name="campo[file-{{ $campo->id  }}]"
                                                 type="file"
                                             />
                                         @endif

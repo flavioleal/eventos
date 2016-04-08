@@ -8,7 +8,6 @@ var handleBootstrapWizardsValidation = function() {
     "use strict";
     $("#wizard").bwizard({
         validating: function(e, t) {
-
             if (t.index == 0) {
                 if (false === $('form[name="form-wizard"]').parsley().validate("wizard-step-1")) {
                     return false
@@ -24,8 +23,7 @@ var handleBootstrapWizardsValidation = function() {
                 if (false === $('form[name="form-wizard"]').parsley().validate("wizard-step-3")) {
                     return false
                 } else {
-                    var $form = $('form#form-evento-design');
-                    $form.trigger('submit');
+                    $('.wizard-step-3 form').trigger('submit');
                 }
             }
         }
